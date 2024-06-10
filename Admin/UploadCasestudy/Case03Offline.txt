@@ -1,0 +1,16 @@
+select *from student where stid=255
+select *from examset order by examid desc
+select distinct stid from studentpapermarks where stid=255
+Select distinct ExamId from StudentSupplyExamAssign where stid=255 and bid=3100 
+
+delete from StudentPaperMarks where stid=255 and pid=4176 and bid=3100
+
+update StudentPaperMarks set paperId=30 where pid=4176 and bid=3100 --30
+
+select distinct ExamId from StudentActiveExam where userid='johnpetercbm@gmail.com'  -- 5493
+select distinct ExamId from StudentPaperMarks inner join examset on examset.paperid=StudentPaperMarks.paperid where examset.examid=5493
+
+select distinct ExamId from examset where examid in (select distinct ExamId from StudentPaperMarks inner join examset on examset.paperid=StudentPaperMarks.paperid where examset.examid in (select distinct ExamId from StudentActiveExam where userid='johnpetercbm@gmail.com') and StudentPaperMarks.stid=255)
+
+select distinct ExamId from StudentPaperMarks inner join examset on examset.paperid=StudentPaperMarks.paperid where examset.examid in (select distinct ExamId from StudentActiveExam where userid='johnpetercbm@gmail.com')
+select distinct ExamId from examset where examid not in (select distinct ExamId from StudentPaperMarks inner join examset on examset.paperid=StudentPaperMarks.paperid where examset.examid in (select distinct ExamId from StudentActiveExam where userid='johnpetercbm@gmail.com') and StudentPaperMarks.stid=255) and examid in (select distinct ExamId from StudentActiveExam where userid='johnpetercbm@gmail.com')

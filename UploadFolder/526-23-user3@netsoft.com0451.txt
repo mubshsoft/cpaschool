@@ -1,0 +1,62 @@
+      public DataSet StudentInActivateExam(TransportationPacket packet)
+        {
+            DataSet ds = new DataSet();
+            try
+            {
+                LIBExam objLIBExam = new LIBExam();
+                objLIBExam = (LIBExam)packet.MessagePacket;
+                List<SqlParameter> objParamList = new List<SqlParameter>();
+                objParamList.Add(new SqlParameter("@examid", objLIBExam.ExamId));
+                objParamList.Add(new SqlParameter("@batchid", objLIBExam.BatchId));
+          
+
+                LIBExamListing objExamListing = new LIBExamListing();
+
+                ds = objDbConnection.ExecuteSPDataSet("SP_GetStudentListForAcyivate", objParamList);
+
+                if (ds != null)
+                {
+                    if (ds.Tables != null)
+                    {
+                        if (ds.Tables[0].Rows != null)
+                        {
+
+
+                        }
+                    }
+                }
+                packet.MessageResultset = (LIBExamListing)objExamListing;
+            }
+            catch (Exception ex)
+            {
+                packet.MessageResultset = EStatus.Exception;
+                HandleException.ExceptionLogging(ex.Source, ex.Message, true);
+            }
+            return ds;
+        }
+
+   public int AddActivateStudentExamSet(TransportationPacket tp)
+        {
+            int addResult = 0;
+            try
+            {
+                List<SqlParameter> objParamList = new List<SqlParameter>();
+                LIBExam objExam = new LIBExam();
+                objExam = (LIBExam)tp.MessagePacket;
+                objParamList.Add(new SqlParameter("@examid", objExam.ExamId));
+                objParamList.Add(new SqlParameter("@batchid", objExam.BatchId));
+                objParamList.Add(new SqlParameter("@userid", objExam.UserId));
+
+
+
+                addResult = objDbConnection.ExecuteNonQueryReturnValueWithoutAdd("SP_AddStudentExamActivate", objParamList);
+
+            }
+            catch (Exception ex)
+            {
+                tp.MessageResultset = EStatus.Exception;
+                HandleException.ExceptionLogging(ex.Source, ex.Message, true);
+            }
+
+            return addResult;
+        }

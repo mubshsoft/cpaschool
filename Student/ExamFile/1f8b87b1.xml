@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18783</Questionid>
+        <QuestionText>An Advertising Campaign for which the benefit will be received over 4 years is :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>19703</Questionid>
+        <QuestionText>Rs 5000/= paid as Loan to Employee  can be classified as </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18790</Questionid>
+        <QuestionText>Purchase of Blankets for Distribution to the Poor  can be classified as :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18781</Questionid>
+        <QuestionText>Debits __________ the value of Assets and  Expenses :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18785</Questionid>
+        <QuestionText>Endowment Fund is a Monies received by an NPO :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18791</Questionid>
+        <QuestionText>Receipt of Computers as Donation to the NGO can be classified as :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18772</Questionid>
+        <QuestionText>Expenditure on Printing can be classified as :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18784</Questionid>
+        <QuestionText>Stationery purchased for Rs. 500/= was wrongly recorded as Rs. 5000/= in the Cash Book. This error will result in :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18775</Questionid>
+        <QuestionText>Purchase of Stationery is recorded as land A/C. This is :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18787</Questionid>
+        <QuestionText>Expenditure of Revenue Nature is Entered in :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18782</Questionid>
+        <QuestionText>Credits __________ the value of Liabilities and Income :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18789</Questionid>
+        <QuestionText>Prepaid Expenses  is entered in :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18780</Questionid>
+        <QuestionText>The following error will not affect the tallying of the Trial Balance :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18774</Questionid>
+        <QuestionText>Posting of Interest Received to Debit Side of the Interest Received Ledger is :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>19704</Questionid>
+        <QuestionText>Grant Received for Designated Fund can be  classified as </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18771</Questionid>
+        <QuestionText>Profitability is computed and financial statements are analysed as the end of :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18777</Questionid>
+        <QuestionText>Which of the following is not a Personal Account :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18788</Questionid>
+        <QuestionText>Outstanding Expenditure is Accrued and entered in :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18776</Questionid>
+        <QuestionText>Under which of the following statutes, is Accrual Basis of Accounting adopted on a Regular basis :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18779</Questionid>
+        <QuestionText>One of the Following is not a Primary Books of Account :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18773</Questionid>
+        <QuestionText>Expenditure on Purchase of Land can be classified as :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>19702</Questionid>
+        <QuestionText>Expenses on Awareness Programme  can be classified as </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18778</Questionid>
+        <QuestionText>Capital Expenditure  pertains to the following :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18786</Questionid>
+        <QuestionText>Designated Funds are :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>3327</CategoryId>
+        <Questionid>18770</Questionid>
+        <QuestionText>Bookkeeping is the system of recording, classifying, summarising all monetary transactions so that _____ position of an Organisation can be ascertained :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>3328</CategoryId>
+        <Questionid>19706</Questionid>
+        <QuestionText>What do you understand by Deferred Revenue Expenditure, explain with examples</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>3328</CategoryId>
+        <Questionid>19705</Questionid>
+        <QuestionText>What do you mean by a Going Concern Concept</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>3328</CategoryId>
+        <Questionid>19707</Questionid>
+        <QuestionText>Explain the steps involved in the accounting process from incurring expd to the final accounts</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>3328</CategoryId>
+        <Questionid>19709</Questionid>
+        <QuestionText>Write a Note on the importance of the Journal in the Books of Account</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>3328</CategoryId>
+        <Questionid>19708</Questionid>
+        <QuestionText>What are the objectives and contents of a voucher in accounting</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table31" msdata:rowOrder="30">
+        <ROWID>31</ROWID>
+        <QuesNo>31</QuesNo>
+        <CategoryId>3328</CategoryId>
+        <Questionid>19710</Questionid>
+        <QuestionText>How does the Receipt &amp; Payment A/C differ from the Income &amp; Expenditure Account</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table32" msdata:rowOrder="31">
+        <ROWID>32</ROWID>
+        <QuesNo>32</QuesNo>
+        <CategoryId>3328</CategoryId>
+        <Questionid>19711</Questionid>
+        <QuestionText>An NGO has entered into a Rent agreement for an annual rent of Rs 2.00 lacs. The rent was paid on 1.12.16 for the period upto Dec 30.11.2017. What is the accounting concept that will apply to accounting of rent expenses for the year 2016-17. Also advise what amount will reflect in the Financial Statements. :</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table33" msdata:rowOrder="32">
+        <ROWID>33</ROWID>
+        <QuesNo>33</QuesNo>
+        <CategoryId>3329</CategoryId>
+        <Questionid>19714</Questionid>
+        <QuestionText>Write a Detailed Note on Fund Accounting by NGOs</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table34" msdata:rowOrder="33">
+        <ROWID>34</ROWID>
+        <QuesNo>34</QuesNo>
+        <CategoryId>3329</CategoryId>
+        <Questionid>19715</Questionid>
+        <QuestionText>Explain the basis of preparation of the receipt &amp; payments Account</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table35" msdata:rowOrder="34">
+        <ROWID>35</ROWID>
+        <QuesNo>35</QuesNo>
+        <CategoryId>3329</CategoryId>
+        <Questionid>19712</Questionid>
+        <QuestionText>Explain in depth the various concepts used in Accounting</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table36" msdata:rowOrder="35">
+        <ROWID>36</ROWID>
+        <QuesNo>36</QuesNo>
+        <CategoryId>3329</CategoryId>
+        <Questionid>19713</Questionid>
+        <QuestionText>Write a detailed Note on the importance of Subsidiary Ledgers in the Accounting process</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table37" msdata:rowOrder="36">
+        <ROWID>37</ROWID>
+        <QuesNo>37</QuesNo>
+        <CategoryId>4323</CategoryId>
+        <Questionid>19716</Questionid>
+        <QuestionText>Practical Question</QuestionText>
+        <UploadQuestionImagePath>Examid_2484Capture.PNG</UploadQuestionImagePath>
+        <MaxQueMarks>20</MaxQueMarks>
+        <CategoryName>Section4</CategoryName>
+        <QUESTYPE>Image Question</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

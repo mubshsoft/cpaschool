@@ -1,0 +1,65 @@
+
+                                        
+                                       <table class="table table-borderless">
+                                    <tbody>
+                                    
+                                    <tr>
+                                        <td class="span2">Manuscript ID  :</td>
+                                        <td>
+                                         
+                                        <span id="lblpreviewlblId">INS151190920CVR</span>
+                                         
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="span2">Title :</td>
+                                        <td>
+                                          <span id="lblpreviewTitle">test article on 19st sept 2020</span>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td class="span2">Head :</td>
+                                        <td>
+                                          <span id="lblpreviewHeading">test article on 19st sept 2020</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="span2">Keyword :</td>
+                                        <td>
+                                       
+                             
+                               
+                              <i class="icon-hand-right"></i>   Antibiotic Resistance,<br>
+                               
+                           
+                          
+                           
+                      
+                                        </td>
+                                    </tr>
+
+                                     <tr>
+                                        <td class="span2">Author Affiliations :</td>
+                                        <td>
+                                          <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><div class="scroller" style="overflow: hidden; width: auto; height: 250px;">
+                                        
+                                           
+                                      
+                                        <div class="span4" style="margin:0px 4px;">
+                                        <i class="icon-hand-right"></i> <strong>wahid  siddiqui (SW)</strong><br>
+                                        
+                                       <em> Email: test@gmail.com,</em><br>
+<em>Phone:898984334343</em><br><em>Inst.:inst</em><br><em>Department:dept</em><br><em>City:city</em><br><em>State:state</em><br><em>Country:India</em><br><em>Corresponding Author: Yes</em>
+<hr>
+                                        </div>
+                                        
+                                  
+                                       
+                                         </div><div class="slimScrollBar ui-draggable" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 250px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                        </td>
+                                    </tr>
+
+                                 
+                                   
+                                    </tbody>
+                                </table>

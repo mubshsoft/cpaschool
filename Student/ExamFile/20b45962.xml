@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30688</Questionid>
+        <QuestionText>As per the FCRR 2011 , the Books of Accounts and records of the associations should be preserved up to</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30701</Questionid>
+        <QuestionText>Intimation of Quarterly Receipts shall be done within ……days following the last day of the quarter in which it has been received</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30693</Questionid>
+        <QuestionText>Every person who has been granted ……….. under section 12 shall maintain a separate set of accounts and records, exclusively, for the foreign contribution received and utilized,”</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30686</Questionid>
+        <QuestionText>An FC Registered NGO can transfer FC Funds to unregistered organization</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30689</Questionid>
+        <QuestionText>As per the the recent Amendment (FCRA Amendment Act 2020) the prescribes limit of administrative expenditure is:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30707</Questionid>
+        <QuestionText>The certificate to donor need to be issued by 80G registered organizations</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30690</Questionid>
+        <QuestionText>Charitable organization need register under 12A </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30684</Questionid>
+        <QuestionText> The organization need to file FC FORM…. in order to surrender its FCRA registration</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30709</Questionid>
+        <QuestionText>The last date to deposit TDS for the month of March 2021 is</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30696</Questionid>
+        <QuestionText>In case, foreign contribution is not received in a particular year, it is not mandatory to submit FCRA Annual Returns </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30700</Questionid>
+        <QuestionText>Interest generated out of FDs made out of FC Funds </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30694</Questionid>
+        <QuestionText>FCRA Annual Returns needs to be submitted in </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30695</Questionid>
+        <QuestionText>Gratuity Law is applicable if any organization has more that …………….staff</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30697</Questionid>
+        <QuestionText>In order to be eligible for tax exemption an organization is required to..............</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30699</Questionid>
+        <QuestionText>Inter charity donation will be not considered as application of the income if donation is given to another charitable organization</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30691</Questionid>
+        <QuestionText>Commercial receipts from foreign source are considered as</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30685</Questionid>
+        <QuestionText>A NGO had 25 staff working for various projects. However, it did not register for PF claiming that it was a charitable organization and hence, did not fall under the purview of PF. Discuss the facts.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30708</Questionid>
+        <QuestionText>The FCRA la is applicable to:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30698</Questionid>
+        <QuestionText>In order to be eligible to apply for FCRA registration, the entity should have incurred at least Rs……................ over the last 3 years on its Programme expenditure</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30692</Questionid>
+        <QuestionText>During a Programme activity, a Programme officer paid Rs. 15,000 to a resource person in cash for conducting the training on SHGs and obtained an acknowledgement/receipt for the same. Discuss the implications</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30711</Questionid>
+        <QuestionText>Which of the following details need to be disclosed in Annual Returns i.e. FC-4</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30702</Questionid>
+        <QuestionText>Normal fees for renewal of registration under FCRA, 2010 is -</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30687</Questionid>
+        <QuestionText>As per FCRA, if a FC Grant is not utilized within a year then </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30712</Questionid>
+        <QuestionText>Which of the following investments can be considered as nature of speculative investment as per the FCRA Provision:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30703</Questionid>
+        <QuestionText>Once FCRA Registration is granted, it will be valid for the lifetime of the organization until and unless it is cancelled</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30710</Questionid>
+        <QuestionText>The requirement of minimum number of members to form society is </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30705</Questionid>
+        <QuestionText>Quarterly intimations of FC Receipts should be submitted at</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30713</Questionid>
+        <QuestionText>Which of the following is a foreign contribution?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30704</Questionid>
+        <QuestionText>Organization of Political nature </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>13378</CategoryId>
+        <Questionid>30706</Questionid>
+        <QuestionText>Section 8 company comes under which of the following:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

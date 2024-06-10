@@ -1,0 +1,23 @@
+
+https://www.youtube.com/watch?v=C21JNx6hE1w&list=PLFtLsSgifot8Nm5DfKRWXCXItmr08z1PC&index=3
+https://www.youtube.com/watch?v=ADLub8qUy3Q&list=PLyYDGDUwrQY1gkzCmxUT-LQaDhxg2EySR
+https://www.youtube.com/watch?v=_md2nFUsQoQ
+https://www.youtube.com/watch?v=7wv7NA2A-gA
+http://www.webdevelopmenthelp.net/2016/11/asp-net-mvc-shopping-cart-part3.html
+
+https://www.c-sharpcorner.com/article/create-mvc-project-step-by-step-from-scratch-part-one/
+
+https://www.c-sharpcorner.com/article/creating-shopping-cart-application-from-scratch-in-mvc-part2/
+
+EXEC sp_generate_inserts 'issues', @from = "from issues where id=1"
+
+INSERT INTO [issues] ([ArticleID],[ID],[Name],[Year],[month],[vol],[Page],[Number],[type],[path],[Description],[TYP],[Price],[Dollar],[Pound],[Price_Full_Issue],[Dollar_Full_Issue],[Topic],[TopicEditor])VALUES(1,13,'Bombay Hospital Journal','2011','April','53',154,2,'OpenAccess','ejournals/Bombay Hospital Journal','Bombay Hospital Journal','ISU',0.0000,0.0000,0.0000,0.0000,0.0000,NULL,NULL)
+
+INSERT INTO [issues] ([ArticleID],[ID],[Name],[Year],[month],[vol],[Page],[Number],[type],[path],[Description],[TYP],[Price],[Dollar],[Pound],[Price_Full_Issue],[Dollar_Full_Issue],[Topic],[TopicEditor])
+VALUES(4,1,'Bombay Hospital Journal','2012','January','54',195,1,'OpenAccess','ejournals/Bombay Hospital Journal','Bombay Hospital Journal','ISU',0.0000,0.0000,0.0000,0.0000,0.0000,NULL,NULL)
+
+
+https://www.justdial.com/Bhagalpur/Ambulance-Services/nct-10015724
+
+~/Up_Files/M_Script/135/135_5Manuscript.docx
+~/Up_Files/M_Script/98/98_3TEXT_capillary hemangioma.docx

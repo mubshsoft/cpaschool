@@ -1,0 +1,763 @@
+alter table course 
+add CourseType varchar(100)
+
+alter table unit 
+add Mode varchar(100)
+
+alter table student
+add ProfileImage varchar(200)
+
+ALter table AssignmentQUES_ANSWERS
+ADD Feedback varchar(1000)
+
+ALter table AssignmentQUES_ANSWERS
+ADD MarkGivenByFaculty int
+
+ALter table AssignmentSubQUES_ANSWERS
+ADD Feedback varchar(1000)
+
+ALter table AssignmentSubQUES_ANSWERS
+ADD MarkGivenByFaculty int
+
+
+ALTER table ActivateAssignment
+ADD MarkGivenByFaculty bit
+
+alter table QUES_ANSWERS
+ADD Feedback varchar(1000)
+
+alter table QUES_ANSWERS
+ADD MarkGivenByFaculty int
+
+Alter table ActivateExam
+Add MarkGivenByFaculty int
+
+[SP_GetListOfExamToFaculty]
+GO
+CREATE TABLE [dbo].[FacultyActiveAssignment](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[AsgnId] [int] NOT NULL,
+	[FId] [int] NOT NULL,
+	[FacultyEmail] [varchar](250) NOT NULL,
+	[Activate] [bit] NOT NULL,
+	[ActivateDate] [datetime] NULL,
+	[bid] [int] NULL,
+	[EndAssignmentTime] [datetime] NULL
+) ON [PRIMARY]
+
+GO
+
+CREATE TABLE [dbo].[FacultyActiveExam](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[ExamId] [int] NOT NULL,
+	[FId] [int] NOT NULL,
+	[FacultyEmail] [varchar](250) NOT NULL,
+	[Activate] [bit] NOT NULL,
+	[ActivateDate] [datetime] NULL,
+	[bid] [int] NULL,
+	[EndExamTime] [datetime] NULL
+) ON [PRIMARY]
+
+GO
+
+
+CREATE proc [dbo].[sp_GetExamDetails] 
+(
+@ExamId int
+)
+as
+begin
+if(@ExamId=0)
+begin
+set @ExamId= null
+end
+select 
+e.ExamId,
+(e.TimeAllowted)/60 as TimeAllowted,
+e.ExamCode,
+c.CourseTitle,
+s.SemesterTitle,
+m.ModuleTitle,
+p.PaperTitle,
+
+convert(varchar,createDate,103) as createDate
+from ExamSet e join
+Course c on e.CourseId=c.CourseId join
+Semester s on e.SemId=s.SemId join
+Module m on e.ModuleId=m.ModuleId join
+Paper p on e.PaperId=p.PaperId
+where e.ExamId=isnull(@ExamId,e.ExamId)
+and active=1
+order by ExamId desc
+end
+
+
+GO
+
+
+CREATE PROC [dbo].[SP_AddExamToFaculty] 
+	@Examid  int,
+  	@UserId int
+AS
+
+BEGIN
+--*********************************  if exist then update  **********************************--
+IF(EXISTS(SELECT TOP 1 1 FROM FacultyActiveExam WHERE Examid=@Examid))
+	BEGIN
+	IF @@ERROR <> 0    
+		  BEGIN    
+				RETURN -1
+		  END  
+	else
+		begin
+				return 2
+		end
+	END
+ELSE
+	begin
+    declare @bid int
+		select @bid=bid from ActivateExam where Examid=@Examid
+		declare @email varchar(250)
+		select @email=email from FacultyRegistration where fid=@UserId
+		INSERT INTO FacultyActiveExam(FID,FacultyEmail,Examid,Activate,BID)
+		values(@UserId,@email,@Examid, 0,@bid)
+		IF @@ERROR <> 0    
+		BEGIN    
+			RETURN -1
+		END  
+	else
+		begin
+			return 1
+		end
+
+end
+
+
+
+end
+
+
+GO
+
+
+CREATE PROCEDURE [dbo].[SP_GetAssignedExamtoFaculty] 
+(
+@Examid int
+)
+AS
+BEGIN
+
+if(@Examid=0)
+ begin
+  set @Examid=null
+ end
+else 
+begin
+set @Examid=@Examid
+end
+select fa.id,f.fid,(f.firstname + ' ' + f.lastname) as name,f.email,fa.bid,fa.Examid,fa.Activate 
+from FacultyActiveExam fa
+join facultyregistration f on f.fid=fa.fid
+where fa.Examid=isnull(@Examid,fa.Examid)
+
+END
+GO
+
+
+
+
+CREATE TABLE [dbo].[AssignmentFinalMarks](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[AsgnId] [int] NULL,
+	[UserId] [varchar](200) NULL,
+	[TotalMarks] [int] NULL,
+	[Fid] [int] NULL,
+	[SubmittedDate] [datetime] NULL,
+	[ModifiedDate] [datetime] NULL,
+	[Status] [bit] NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[AssignmentFinalMarks] ADD  CONSTRAINT [DF_AssignmentFinalMarks_SubmittedDate]  DEFAULT (getdate()) FOR [SubmittedDate]
+GO
+
+CREATE TABLE [dbo].[ExamFinalMarks](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[ExamId] [int] NULL,
+	[UserId] [varchar](200) NULL,
+	[TotalMarks] [int] NULL,
+	[Fid] [int] NULL,
+	[SubmittedDate] [datetime] NULL,
+	[ModifiedDate] [datetime] NULL,
+	[Status] [bit] NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[ExamFinalMarks] ADD  CONSTRAINT [DF_ExamFinalMarks_SubmittedDate]  DEFAULT (getdate()) FOR [SubmittedDate]
+GO
+
+CREATE TABLE [dbo].[AssignmentManualFinalMarks](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[AsgnId] [int] NULL,
+	[UserId] [varchar](200) NULL,
+	[TotalMarks] [int] NULL,
+	[Feedback] [Varchar](1000) NULL,
+	[Fid] [int] NULL,
+	[SubmittedDate] [datetime] NULL,
+	[ModifiedDate] [datetime] NULL,
+	[Status] [bit] NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[AssignmentFinalMarks] ADD  CONSTRAINT [DF_AssignmentFinalMarks_SubmittedDate]  DEFAULT (getdate()) FOR [SubmittedDate]
+GO
+
+
+CREATE TABLE [dbo].[AssignmentManualFinalMarks](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[AsgnId] [int] NULL,
+	[UserId] [varchar](200) NULL,
+	[TotalMarks] [int] NULL,
+	[Fid] [int] NULL,
+	[SubmittedDate] [datetime] NULL,
+	[ModifiedDate] [datetime] NULL,
+	[Status] [bit] NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[AssignmentManualFinalMarks] ADD  CONSTRAINT [DF_AssignmentManualFinalMarks_SubmittedDate]  DEFAULT (getdate()) FOR [SubmittedDate]
+GO
+
+--SP_GetExamListByBatch 89
+Create proc SP_GetExamListByBatch 
+
+(
+
+@bid int
+
+)
+
+As
+
+BEGIN
+
+select distinct e.examid,e.examcode,ae.bid from StudentActiveExam ae inner join examset e on e.examid=ae.examid where activate=1 and bid=@bid order by bid
+
+END
+
+GO
+
+
+--[SP_GetActiveStudentforExam] 16,53
+CREATE  proc [dbo].[SP_GetActiveStudentforExam]   
+(  
+@bid int,
+@Examid int
+)  
+as  
+begin  
+	if(@Examid=0)  
+	begin  
+	set @Examid= null  
+	end 
+
+  select Examid,bid,stid, (firstname + ' ' + middlename + ' ' + lastname) as name,dob, Userid as emailid,Activate,ActivateDate as startExam,EndExamtime as endExam,*from StudentActiveExam ae inner join student s on s.email=ae.userid 
+  where bid=@bid and ae.examid=isnull(@Examid,ae.examid) and activate=0 
+  order by activatedate desc  
+
+end
+
+GO
+
+
+ALTER PROC [dbo].[SP_AddAssignmentActivate] 
+	
+  @Asgnid int,
+@batchid int,
+@activatedate datetime,
+@deactivatedate datetime
+
+   
+AS
+BEGIN
+	IF(EXISTS(SELECT TOP 1 1 FROM ActivateAssignment WHERE Asgnid=@Asgnid and bid=@batchid))
+	BEGIN
+--      change made by wahid on 01-10-2009
+
+      -- changemade by chhaya on 27-10-2009
+       -- select @Asgnid,email,bid from StudentRegBatch
+        -- join student on StudentRegBatch.stid=student.stid 
+         --where email not in (select UserId from StudentActiveAssignment where Asgnid=@Asgnid and bid=@batchid)
+		--and studentregbatch.bid=@batchid
+INSERT INTO StudentActiveAssignment(Asgnid,userid,bid)
+       select  distinct e.Asgnid,email,StudentRegBatch.bid
+ from StudentRegBatch
+  join student on StudentRegBatch.stid=student.stid
+  join studentsemester s on StudentRegBatch.stid=s.stid
+  join Assignmentset e on StudentRegBatch.courseid=e.courseid
+   left outer join studentpapermarks sm on sm.paperid=e.paperid and sm.bid=StudentRegBatch.bid
+  where s.currentstatus=2 and e.semid=s.semid 
+   and StudentRegBatch.bid=@batchid and Asgnid=@Asgnid
+ and (sm.Assignstatus=0 or sm.Assignstatus is null)
+   and email not in (select UserId from StudentActiveAssignment where Asgnid=@Asgnid and bid=@batchid)
+--		change made by wahid on 01-10-2009
+
+        return 2
+--		return -11
+	
+		
+	END
+	ELSE
+	BEGIN
+	
+	
+		INSERT INTO ActivateAssignment(Asgnid,bid,ActivateDate,DeactivateDate)
+		values(@Asgnid,@batchid,@activatedate,@deactivatedate)
+     
+		IF @@ERROR <> 0    
+		  BEGIN    
+				
+	         RETURN -1
+
+		  END  
+		else
+		begin
+
+INSERT INTO StudentActiveAssignment(Asgnid,userid,bid)
+        select distinct e.Asgnid,email,StudentRegBatch.bid
+ from StudentRegBatch
+  join student on StudentRegBatch.stid=student.stid
+  join studentsemester s on StudentRegBatch.stid=s.stid
+  join Assignmentset e on StudentRegBatch.courseid=e.courseid
+    left outer join studentpapermarks sm on sm.paperid=e.paperid and sm.bid=StudentRegBatch.bid
+  where s.currentstatus=2 and e.semid=s.semid 
+   and StudentRegBatch.bid=@batchid and Asgnid=@Asgnid
+ --and (sm.Assignstatus=0 or sm.Assignstatus is null)  comment made by wahid on 19-09-2020
+   and email not in (select UserId from StudentActiveAssignment where Asgnid=@Asgnid and bid=@batchid)
+				return 1
+		end
+	
+End
+
+
+
+END
+
+
+GO
+
+
+CREATE proc [dbo].[SP_GetAssignmentAnswerOfflineandManual] 
+(
+@AsgnId int,
+@UserId varchar(250)
+)
+
+as
+
+begin
+
+select  UploadAnsPath from AssignmentManualAnswers where AsgnId=@AsgnId and userid=@UserId
+
+end
+
+GO
+
+
+USE fmsflearnings_latest
+GO
+
+Create PROC [dbo].[SP_AddAssignmentToFaculty] 
+	@Asgnid  int,
+   	@UserId int
+AS
+BEGIN
+
+--*********************************  if exist then update  **********************************--
+
+IF(EXISTS(SELECT TOP 1 1 FROM FacultyActiveAssignment WHERE Asgnid=@Asgnid))--and AnsText=@AnsText
+	BEGIN
+	--UPDATE FacultyActiveAssignment SET Activate=0  WHERE FID=@UserId and Asgnid=@Asgnid 
+	IF @@ERROR <> 0    
+		  BEGIN    
+				RETURN -1
+		  END  
+	else
+		begin
+				return 2
+		end
+	END
+
+ELSE
+	begin
+	    declare @bid int
+		select @bid=bid from ActivateAssignment where asgnid=@Asgnid
+		
+		declare @email varchar(250)
+		select @email=email from FacultyRegistration where fid=@UserId
+		
+
+		INSERT INTO FacultyActiveAssignment(FID,FacultyEmail,Asgnid,Activate,BID)
+		values(@UserId,@email,@Asgnid, 0,@bid)
+		IF @@ERROR <> 0    
+		BEGIN    
+			RETURN -1
+		END  
+	else
+		begin
+			return 1
+		end
+end
+
+end
+
+
+
+
+GO
+
+CREATE PROCEDURE [dbo].[SP_GetAssignedAssignmenttoFaculty] 
+(
+@Asgnid int
+)
+AS
+BEGIN
+if(@Asgnid=0)
+ begin
+  set @Asgnid=null
+ end
+else 
+begin
+set @Asgnid=@Asgnid
+end
+
+select fa.id,f.fid,(f.firstname + ' ' + f.lastname) as name,f.email,fa.bid,fa.asgnid,fa.Activate 
+from FacultyActiveAssignment fa
+
+join facultyregistration f on f.fid=fa.fid
+where fa.Asgnid=isnull(@Asgnid,fa.Asgnid)
+END
+
+GO
+
+ALTER PROC SP_GetListOfAssignmentToFaculty
+(
+@Username varchar(250),
+@bid int
+)
+As
+BEGIN
+
+
+if(@Username='')
+BEGIN
+SET @Username=NULL
+END
+
+if(@bid=0)
+BEGIN
+SET @bid=NULL
+END
+
+Select *from(
+select  
+ROW_NUMBER() OVER(PARTITION BY fa.AsgnId ORDER BY fa.AsgnId DESC) AS 'RowNumber', 
+fa.AsgnId,fa.FId,fa.FacultyEmail,fa.Activate,fa.ActivateDate,fa.bid,fa.EndAssignmentTime,Batchcode=(select batchcode from batch where bid=fa.bid), ass.asgncode,AssignmentType,CourseId,CourseTitle=(select CourseTitle from course where course.courseID=ass.courseid),PaperId,
+PaperTitle=(select PaperTitle from Paper where Paper.paperID=ass.paperID),
+AssignmentPath as manualAssignAssignment, UploadAnsPath as submiitedAssignment
+from FacultyActiveAssignment fa inner join assignmentset ass on ass.asgnid=fa.asgnid
+LEFT OUTER JOIN AssignmentManualAnswers ans on ans.AsgnId=fa.AsgnId
+Where fa.FacultyEmail=isnull(@Username,fa.FacultyEmail) and fa.bid=ISNULL(@bid,fa.bid) 
+) a where  RowNumber=1
+END
+
+GO
+
+
+ALTER proc [dbo].[SP_GetUserListSubmittedAssignment] 
+(
+@batchid int,
+@AsgnId int,
+--@activateDate datetime,
+
+--@deactivateDate datetime,
+@Assignmenttype varchar(50)
+)
+as
+begin
+create table #tmp
+(
+Userid varchar(250),
+AsgnId int,
+Assignmenttype varchar(50),
+AssignmentPath varchar(500) default '',
+TotalMarks int,
+Status bit
+)
+
+if(@Assignmenttype='online')
+
+begin
+
+insert into #tmp(Userid,AsgnId,Assignmenttype,TotalMarks,[Status])
+
+select distinct(q.Userid),ae.AsgnId,'Details'
+,mark.TotalMarks,mark.Status ----this added by wahid on 24 - sept 20
+
+from ActivateAssignment ae INNER JOIN AssignmentQUES_ANSWERS q
+
+ on ae.AsgnId=q.AsgnId 
+left outer join AssignmentFinalMarks mark on mark.UserId=q.UserId --this added by wahid on 24 - sept 20
+where q.AsgnId=@AsgnId 
+
+--and q.CREATDDT between @activateDate and @deactivateDate
+
+and ae.BID=@batchid
+
+end
+
+else if(@Assignmenttype='manual' or @Assignmenttype='offline')
+
+begin
+
+insert into #tmp(Userid,AsgnId,AssignmentPath,Assignmenttype,TotalMarks,[Status])
+
+select distinct(q.Userid),ae.AsgnId,q.UploadAnsPath,'Download' 
+,mark.TotalMarks,mark.Status ----this added by wahid on 24 - sept 20
+from ActivateAssignment ae INNER JOIN AssignmentManualAnswers q
+
+ on ae.AsgnId=q.AsgnId 
+left outer join AssignmentManualFinalMarks mark on mark.UserId=q.UserId --this added by wahid on 24 - sept 20
+where q.AsgnId=@AsgnId 
+
+--and q.CREATEDT between @activateDate and @deactivateDate
+
+and ae.BID=@batchid
+
+end
+
+
+
+select * from #tmp
+
+end
+
+GO
+
+ALTER proc  [dbo].[SP_GetSubmitedAssignmentByUserId] 
+(  
+@AsgnID int,  
+@userId varchar(250)  
+)  
+as  
+begin  
+
+create table #tmp  
+(  
+QuestionId int,  
+AnsId int default 0,  
+UserId varchar(300) default '',  
+AsgnID int,  
+CategoryId int,  
+QuestionText ntext,  
+Anstext ntext default '',  
+Answer varchar(2000) default '',  
+questype varchar(100),  
+MaxQueMarks int,  
+categoryname varchar(500),  
+uploadpath Varchar(500) default '',
+MarkGivenByFaculty int,
+Feedback varchar(100)
+)  
+
+insert into #tmp(  
+QuestionId,  
+AnsId,  
+UserId,  
+AsgnID,  
+CategoryId,  
+uploadpath,  
+QuestionText,  
+Anstext,  
+Answer,  
+questype,  
+MaxQueMarks,  
+categoryname ,
+MarkGivenByFaculty,
+Feedback
+)  
+select qa.QuestionId,  
+qa.AnsId,  
+qa.UserId,  
+qa.AsgnID,  
+qa.CategoryId,  
+qa.uploadanspath,  
+q.QuestionText,  
+qa.Anstext,  
+q.Answer,  
+q.questype,  
+q.MaxQueMarks,  
+ac.categoryname,
+qa.MarkGivenByFaculty,
+qa.Feedback
+from Assignmentques_answers qa  
+join Assignmentquestions q  
+on q.questionid=qa.questionid  
+join Assignment_category ac  
+on qa.categoryid=ac.categoryid  
+where qa.userid=@userId  
+and qa.AsgnID=@AsgnID  
+
+  
+
+insert into #tmp(  
+QuestionId,  
+AsgnID,  
+CategoryId,  
+QuestionText,  
+questype,  
+MaxQueMarks,  
+categoryname  
+)  
+
+select  q.QuestionId,  
+q.AsgnID,  
+q.CategoryId,  
+q.QuestionText,  
+q.questype,  
+q.MaxQueMarks,  
+ac.categoryname  
+from Assignmentquestions q  
+join Assignment_category ac  
+on q.categoryid=ac.categoryid  
+where q.questionid in (select questionid from Assignmentsubques_answers where userid=@userid  
+and AsgnID=@AsgnID )  
+--order by qa.categoryid  
+select * from #tmp order by categoryid  
+
+end  
+
+GO
+
+
+
+ALTER PROC [dbo].[SP_AddUpdateAssignmentFinalMarks] 
+	    @AsgnId int,
+        @UserId varchar(200),
+   		@TotalMarks int,
+		@Fid int
+AS
+BEGIN
+	
+	IF(EXISTS(SELECT TOP 1 1 FROM AssignmentFinalMarks WHERE AsgnId=@AsgnId and UserId=@UserId))
+	BEGIN
+		UPDATE AssignmentFinalMarks
+				SET TotalMarks=@TotalMarks,ModifiedDate=getdate()
+				WHERE AsgnId=@AsgnId and UserId=@UserId
+
+		IF @@ERROR <> 0    
+		  BEGIN    
+				
+	         RETURN -1
+
+		  END  
+		else
+		begin
+				return 1
+		end
+			
+	END
+	ELSE
+	BEGIN
+
+		INSERT INTO AssignmentFinalMarks(AsgnId,UserId,TotalMarks,Fid,[Status],SubmittedDate)
+		values(@AsgnId,@UserId,@TotalMarks,@Fid,1,getdate())
+        DECLARE @cid int
+		
+	END
+	    
+		IF @@ERROR <> 0    
+		  BEGIN    
+				
+			 RETURN -1
+
+		  END  
+		else
+		begin
+      
+
+				return 1
+		end
+	END
+
+GO
+
+
+
+ALTER PROC [dbo].[SP_AddUpdateManualAssignmentFinalMarks] 
+	    @AsgnId int,
+        @UserId varchar(200),
+   		@TotalMarks int,
+		@Feedback varchar(1000),
+		@Fid int
+AS
+BEGIN
+	
+	IF(EXISTS(SELECT TOP 1 1 FROM AssignmentManualFinalMarks WHERE AsgnId=@AsgnId and UserId=@UserId))
+	BEGIN
+		UPDATE AssignmentManualFinalMarks
+				SET TotalMarks=@TotalMarks,Feedback=@Feedback,ModifiedDate=getdate()
+				WHERE AsgnId=@AsgnId and UserId=@UserId
+
+		IF @@ERROR <> 0    
+		  BEGIN    
+				
+	         RETURN -1
+
+		  END  
+		else
+		begin
+				return 1
+		end
+			
+	END
+	ELSE
+	BEGIN
+
+		INSERT INTO AssignmentManualFinalMarks(AsgnId,UserId,TotalMarks,Feedback,Fid,[Status],SubmittedDate)
+		values(@AsgnId,@UserId,@TotalMarks,@Feedback,@Fid,1,getdate())
+        DECLARE @cid int
+		
+	END
+	    
+		IF @@ERROR <> 0    
+		  BEGIN    
+				
+			 RETURN -1
+
+		  END  
+		else
+		begin
+      
+
+				return 1
+		end
+	END
+
+GO

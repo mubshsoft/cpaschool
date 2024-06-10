@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33716</Questionid>
+        <QuestionText>A policy is formulated keeping in view -</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33740</Questionid>
+        <QuestionText>Which of the below can be considered as a part of the Control System </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33714</Questionid>
+        <QuestionText>……………………….. Is an example of non-financial report?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33722</Questionid>
+        <QuestionText>Control over advance can be exercised through</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33734</Questionid>
+        <QuestionText>The task of setting the goals and objectives of the organization would be carried out in</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33732</Questionid>
+        <QuestionText>The ‘Action’ Component of Planning is</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33736</Questionid>
+        <QuestionText>Transfer of asset from one location to another </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33731</Questionid>
+        <QuestionText>Planning can best be described as an activity that</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33717</Questionid>
+        <QuestionText>Basic elements of control includes -</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33733</Questionid>
+        <QuestionText>The monitoring of the timely filing of FCRA Return with Ministry is</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33726</Questionid>
+        <QuestionText>Human Resource policy is formulated by -</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33730</Questionid>
+        <QuestionText>Nature of cost can be considered in budget i.e. ………………..</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33729</Questionid>
+        <QuestionText>Log Book of the Vehicle is maintained </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33739</Questionid>
+        <QuestionText>What is the main difference between incremental budgeting and zero based budgeting.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33737</Questionid>
+        <QuestionText>Vehicles have been distributed to handicapped persons, being the beneficiaries under the project. The expenditure on the purchase of the vehicles will be part of</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33720</Questionid>
+        <QuestionText>Cash budget focuses on__________cash flows.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33728</Questionid>
+        <QuestionText>In its essence, Budgeting is</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33735</Questionid>
+        <QuestionText>The value of cash inflow to be received in future is valued today by discounting. This would be termed as:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33743</Questionid>
+        <QuestionText>Which of the following statement is incorrect</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33721</Questionid>
+        <QuestionText>Complete the process of planning: Planning, and ………………..</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33724</Questionid>
+        <QuestionText>Encumbrances in the budget process refers to</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33741</Questionid>
+        <QuestionText>Which of the following is not a characteristics of a budget?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33719</Questionid>
+        <QuestionText>Budget has to be prepared by an NPO related to the project called “Education to the girl child”. NPO 1 prepares the budget involving finance team. NPO 2 involves finance team as well as program implementation team. Which team would end up with the appropriate budget structure?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33738</Questionid>
+        <QuestionText>Vision statements are derived from Mission statements. State true or false.
+
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33727</Questionid>
+        <QuestionText>In an Annual Financial Report the following will not be included</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33742</Questionid>
+        <QuestionText>Which of the following is not a drivers in budgeting?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33715</Questionid>
+        <QuestionText>A Finance Plan will not include</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33723</Questionid>
+        <QuestionText>Control over Inventory can be exercised through –</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33718</Questionid>
+        <QuestionText>Bifurcation of yearly plan into sub-plan on the basis of month/quarter is called
+
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>16379</CategoryId>
+        <Questionid>33725</Questionid>
+        <QuestionText>For an NGO working in the field of child education in Rajasthan, the following group will be a vital stakeholder</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

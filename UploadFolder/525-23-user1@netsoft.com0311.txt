@@ -1,0 +1,273 @@
+set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+go
+
+ALTER proc [dbo].[SP_InsertStudentReg]
+	@email varchar(50),
+	@password varchar(50),
+	@firstName varchar(100),
+	@middleName varchar(100),
+	@lastname varchar(100),
+	@DOB datetime,
+	@Address1 ntext,
+	@Address2 ntext,
+	@ContactNumber1 varchar(50),
+	@ContactNumber2 varchar(50),
+	@courseId int,
+
+	@approved bit ,
+	@DocVerified bit,
+	@stid numeric,
+
+    @Gender varchar(50),
+    @CurProfession varchar(50),
+    @Nationality varchar(50),
+    @Category varchar(50),
+--    @cDate datetime,
+    @Place varchar(50),
+
+    @edboard1 varchar(200),
+    @edstream1 varchar(100),
+    @edmarks1 float,
+    @edyrs1 varchar(50),
+    @edboard2 varchar(200),
+    @edstream2 varchar(100),
+    @edmarks2 float,
+    @edyrs2 varchar(50),
+    @edboard3 varchar(200),
+    @edstream3 varchar(100),
+    @edmarks3 float,
+    @edyrs3 varchar(50),
+ 
+    @edboard4 varchar(200),
+    @edstream4 varchar(100),
+    @edmarks4 float,
+    @edyrs4 varchar(50),
+
+    @ExOrg1 varchar(100),
+    @ExPh1 varchar(100),
+    @ExDesignation1 varchar(100),
+    @ExService1 varchar(100),
+    @ExOrg2 varchar(100),
+    @ExPh2 varchar(100),
+    @ExDesignation2 varchar(100),
+    @ExService2 varchar(100),
+    @ExOrg3 varchar(100),
+    @ExPh3 varchar(100),
+    @ExDesignation3 varchar(100),
+    @ExService3 varchar(100),
+	@totExp float,
+    @aid int,
+    @stAid int,
+	@screeningexam bit,
+	@feeStatus bit
+   	as
+BEGIN      
+--         DECLARE @maxid int
+--		 select @studentid=stid from student where email=@email
+    
+	if @approved=1
+		begin    
+			if(not exists(select top 1 1 from student where aid=@stid))
+				begin
+					INSERT INTO [Student]
+					   ([email],[password],[firstName],[middleName],[lastname],[DOB],[Address1]
+					   ,[Address2],[ContactNumber1],[ContactNumber2],[Gender],[CurProfession],[Nationality],[Category],[Place]
+						,[edboard1],[edstream1],[edmarks1],[edyrs1]
+						,[edboard2],[edstream2],[edmarks2],[edyrs2]
+						,[edboard3],[edstream3],[edmarks3],[edyrs3]
+						,[edboard4],[edstream4],[edmarks4],[edyrs4]
+						,[ExOrg1],[ExPh1],[ExDesignation1],[ExService1]
+						,[ExOrg2],[ExPh2],[ExDesignation2],[ExService2]
+						,[ExOrg3],[ExPh3],[ExDesignation3],[ExService3]
+						,totexp,aid)
+						values(@email,@password,@firstName,@middleName,
+								@lastname,@DOB,@Address1,@Address2,@ContactNumber1,@ContactNumber2,
+								@Gender,@CurProfession,@Nationality,@Category,@Place,
+								@edboard1,@edstream1,@edmarks1,@edyrs1,
+								@edboard2,@edstream2,@edmarks2,@edyrs2,
+								@edboard3,@edstream3,@edmarks3,@edyrs3,
+								@edboard4,@edstream4,@edmarks4,@edyrs4,
+								@ExOrg1,@ExPh1,@ExDesignation1,@ExService1,
+								@ExOrg2,@ExPh2,@ExDesignation2,@ExService2,
+								@ExOrg3,@ExPh3,@ExDesignation3,@ExService3,@totExp,@aid)
+				
+							   insert into login([username],[password],[type]) 
+							   values(@email,@password,'Student')
+					
+						
+					
+								
+							DECLARE @stuid int
+							set @stuid=IDENT_CURRENT('Student')
+
+							 insert into FeeStatus([stid],[courseid],[FeeStatus]) 
+							 values(@stuid,@courseId,@feeStatus)
+
+							-- Adding By Wahid
+                            -- Add column [stAid] in StudentRegCourse table on 29th june
+							 insert into StudentRegCourse([stid],[courseid],[stAid]) 
+							 values(@stuid,@courseId,@stAid)
+							-- Adding By Wahid
+						
+							DECLARE @Minsemid int
+							set @Minsemid=ISNULL((select min(semid) from semester WHERE CourseID=@courseID),0)
+
+							Declare @TMinSemid int
+							set @TMinSemid=@Minsemid
+							
+							DECLARE @Maxsemid int
+							set @Maxsemid=ISNULL((select max(semid) from semester WHERE CourseID=@courseID),0)
+
+							if @Minsemid > 0 
+									begin
+												WHILE @MinSemid <=@Maxsemid
+													BEGIN
+														insert into studentSemester(CourseID,stid,SemID) 
+														values(@courseId,@stuid,@MinSemid)	
+														SELECT @MinSemid=@MinSemid+1
+													END
+
+												update studentsemester set currentstatus=2,feestatus=@feeStatus where courseid=@courseid and semid=@TMinSemid
+									end
+			     end
+			     else
+                      BEGIN        	-- Adding By Wahid
+					         DECLARE @studentid int
+							 select @studentid=stid from student where email=@email
+                              
+                               -- Add column [stAid] in StudentRegCourse table on 29th june
+                            ---- 10 july, 2009
+							DECLARE @stCid int
+				            select @stCid=stCid from StudentRegCourse where stAid =@stAid and courseId=@courseId and stid=@studentid
+							IF (EXISTS(select top 1 1 from StudentRegCourse where stAid =@stAid and courseid=@courseId))
+								BEGIN
+									Update StudentRegCourse set stid=@studentid,courseid=@courseId,stAid=@stAid where stCid=@stCid
+									update Feestatus
+												set feestatus=@feeStatus 
+												where stid=@studentid and courseid=@courseId
+								END
+                                ELSE
+                                BEGIN
+									insert into StudentRegCourse([stid],[courseid],[stAid]) 
+									values(@studentid,@courseId,@stAid)
+									 insert into FeeStatus([stid],[courseid],[FeeStatus]) 
+									 values(@studentid,@courseId,@feeStatus)
+
+                            END
+
+--							 insert into StudentRegCourse([stid],[courseid],[stAid]) 
+--							 values(@studentid,@courseId,@stAid)
+
+							---- 10 july, 2009
+
+							DECLARE @stuid1 int
+							set @stuid1=IDENT_CURRENT('Student')
+
+							DECLARE @Minsemid1 int
+							set @Minsemid1=ISNULL((select min(semid) from semester WHERE CourseID=@courseID),0)
+
+							Declare @TMinSemid1 int
+							set @TMinSemid1=@Minsemid1
+							
+							DECLARE @Maxsemid1 int
+							set @Maxsemid1=ISNULL((select max(semid) from semester WHERE CourseID=@courseID),0)
+
+							if @Minsemid1 > 0 
+							   begin
+									IF (EXISTS(select top 1 1 from studentSemester where stid =@studentid and courseid=@courseId))
+									begin	
+										update studentsemester set currentstatus=2,feestatus=@feestatus where courseid=@courseid and semid=@MinSemid1
+										return -7
+									end
+									ELSE
+										begin
+											WHILE @MinSemid1 <=@Maxsemid1
+												BEGIN
+													insert into studentSemester(CourseID,stid,SemID) 
+													values(@courseId,@studentid,@MinSemid1)	
+													SELECT @MinSemid1=@MinSemid1+1
+												END
+
+											update studentsemester set currentstatus=2,feestatus=@feestatus where courseid=@courseid and semid=@TMinSemid1
+										end
+								end
+							-- Adding By Wahid
+                   END
+		  end
+	else
+		  begin
+              -- Add by Wahid
+				 DECLARE @st int
+				 select @st=stid from student where aid=@stid				
+			  IF (EXISTS(select top 1 1 from StudentRegCourse where stid =@st))
+			        BEGIN
+--					    select 1
+                        DECLARE @ad int
+                   --- 10 july,2009
+                        select @ad=stAid from StudentRegCourse where stid =@st and courseId=@courseId
+                        delete from StudentRegCourse where stid =@st and stAid=@ad
+                        delete from studentSemester where stid =@st and courseid=@courseid 
+                        delete from StudentRegBatch where stid =@st and courseid=@courseid 
+						delete from FeeStatus where stid =@st and courseid=@courseid 
+
+			---check if last record delete from student and login
+						if (EXISTS(select top 1 1 from StudentRegCourse where stid =@st))
+                        BEGIN
+							select 1
+                        END
+
+                        else
+
+						BEGIN
+							 delete from student where email=@email
+							 delete from login where username=@email
+                        END
+                       
+					END
+				else
+					BEGIN
+						 DECLARE @sid int
+						 select @sid=stid from student where email=@email
+						 delete from StudentRegCourse where stid=@sid
+						 delete from student where email=@email
+						 delete from login where username=@email
+					END
+	                
+						
+               -- Add by wahid
+-----------------------If record Exists in StudentRegCourse, Does not delete data from student table------
+
+--                DECLARE @sid int
+--                select @sid=stid from student where email=@email
+--                delete from StudentRegCourse where stid=@sid
+--				 delete from student where email=@email
+--                delete from login where username=@email
+
+--------------------------------------------------------------------------------------
+-------------------------/check				delete from studentsemester where stid=@stid 
+		end
+
+		IF @@ERROR = 0
+			BEGIN
+				Update Application 
+						set approved=@approved,
+							DocVerified=@Docverified
+                           where aid=@aid  
+                -- Add this by wahid
+                Update StudentAppCourse 
+						set approve=@approved,
+						screeningexam=@screeningexam
+					where aid=@aid and  courseid=@courseId
+			
+                -- Add this by wahid
+				END
+		RETURN 1
+END
+
+
+
+
+
+select * from application2
+delete from application2

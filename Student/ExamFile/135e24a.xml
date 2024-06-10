@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9125</Questionid>
+        <QuestionText>The primary objective of an audit is – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9126</Questionid>
+        <QuestionText>Financial statement includes – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9127</Questionid>
+        <QuestionText>The fundamental accounting assumptions are –</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9128</Questionid>
+        <QuestionText>Who issues audit engagement letter? </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9129</Questionid>
+        <QuestionText>The content(s) of auditors’ report is/are – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9130</Questionid>
+        <QuestionText>Surprise check can be effective for checking of – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9131</Questionid>
+        <QuestionText>The advantages of working papers are – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9132</Questionid>
+        <QuestionText>Which of the following factors affect internal control – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9133</Questionid>
+        <QuestionText>While examining vouchers we should consider – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9134</Questionid>
+        <QuestionText>The fund given  to NGO for specific purpose is – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9135</Questionid>
+        <QuestionText>Internal audit can be done by – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9136</Questionid>
+        <QuestionText>Efficiency audit means – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9137</Questionid>
+        <QuestionText>Permanent audit file contains – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9138</Questionid>
+        <QuestionText>Common audit techniques are – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9139</Questionid>
+        <QuestionText>Methods of obtaining audit evidences are – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9140</Questionid>
+        <QuestionText>Which of these evidence is more reliable?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9141</Questionid>
+        <QuestionText>While vouching payment by cheques we should examine  – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9142</Questionid>
+        <QuestionText>While verifying investment we should examine – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9143</Questionid>
+        <QuestionText>An auditor can use the work of – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9144</Questionid>
+        <QuestionText>Audit planning involves – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9145</Questionid>
+        <QuestionText>Audit of NGO is vital as – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9146</Questionid>
+        <QuestionText>Audit of NGO can be required by – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9147</Questionid>
+        <QuestionText>Type of Error include –</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9148</Questionid>
+        <QuestionText>Surprise check can be for –</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>722</CategoryId>
+        <Questionid>9149</Questionid>
+        <QuestionText>Which of the following is a vouching item – </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9151</Questionid>
+        <QuestionText>Explain the concept of surprise checks.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9152</Questionid>
+        <QuestionText>What are the inherent limitations of internal control system?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9156</Questionid>
+        <QuestionText>Write in details about “Terms of Engagement Letters”. </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9155</Questionid>
+        <QuestionText>Suggest one external and one internal evidence in respect of the following : 
+
+a)	 Payment of Salary
+b)	 Purchase of Motor Car
+c)	 Bank Balance
+d)	 Rent paid for office premises
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9157</Questionid>
+        <QuestionText>Explain the concept of true and fair view. </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table31" msdata:rowOrder="30">
+        <ROWID>31</ROWID>
+        <QuesNo>31</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9154</Questionid>
+        <QuestionText>How can audit be classified on the basis of legislative control along with the basis of relationship with Management? </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table32" msdata:rowOrder="31">
+        <ROWID>32</ROWID>
+        <QuesNo>32</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9153</Questionid>
+        <QuestionText>“Auditor’s primary responsibility is to detect fraud and errors” – Comment on the statement.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table33" msdata:rowOrder="32">
+        <ROWID>33</ROWID>
+        <QuesNo>33</QuesNo>
+        <CategoryId>723</CategoryId>
+        <Questionid>9150</Questionid>
+        <QuestionText>What are the differences between Audit report &amp; Audit certificate?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table34" msdata:rowOrder="33">
+        <ROWID>34</ROWID>
+        <QuesNo>34</QuesNo>
+        <CategoryId>724</CategoryId>
+        <Questionid>9161</Questionid>
+        <QuestionText>What is audit program?  Draft the audit program for conducting audit of a NGO whose main source of income is by way of grants both from foreign sources as well as from Indian sources.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table35" msdata:rowOrder="34">
+        <ROWID>35</ROWID>
+        <QuesNo>35</QuesNo>
+        <CategoryId>724</CategoryId>
+        <Questionid>9158</Questionid>
+        <QuestionText>Differentiate between – 
+
+(a)	Vouching &amp; verification
+(b)	Accounts &amp; audit
+(c)	Accounting Standards &amp; Standards of auditing
+(d)	Self-revealing errors &amp; non-self revealing errors
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table36" msdata:rowOrder="35">
+        <ROWID>36</ROWID>
+        <QuesNo>36</QuesNo>
+        <CategoryId>724</CategoryId>
+        <Questionid>9162</Questionid>
+        <QuestionText>While conducting the audit you have noticed the following items in the Balance Sheet : 
+
+i.	Land &amp; Building					Rs.10,50,000.00
+ii.	Unspent Balance of the funding agencies 		Rs.  6,30,000.00
+iii.	Investment in Mutual Fund				Rs.  5,00,000.00
+iv.	Corpus Fund made during the year 			Rs.15,00,000.00
+
+How you are going to verify the above items appearing in the Balance Sheet?
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table37" msdata:rowOrder="36">
+        <ROWID>37</ROWID>
+        <QuesNo>37</QuesNo>
+        <CategoryId>724</CategoryId>
+        <Questionid>9159</Questionid>
+        <QuestionText>Explain the concept of independence of auditors &amp; examine its relevance in the context of NGO.  Also suggest measures to ensure independence of auditors.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table38" msdata:rowOrder="37">
+        <ROWID>38</ROWID>
+        <QuesNo>38</QuesNo>
+        <CategoryId>724</CategoryId>
+        <Questionid>9160</Questionid>
+        <QuestionText>Explain why Standard on Auditing is issued and explain the Standard on Auditing (SA 700) in relation to Auditor’s Report on financial statement.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

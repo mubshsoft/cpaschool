@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14326</Questionid>
+        <QuestionText>Evaluation is one of the key control tool normally exercised by  -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14333</Questionid>
+        <QuestionText>Monthly Variance Statement should be discussed with  - </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14323</Questionid>
+        <QuestionText>Control over advance can be exercised through -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14314</Questionid>
+        <QuestionText>Insurance coverage is required for -</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14324</Questionid>
+        <QuestionText>Operational plan helps in –</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14311</Questionid>
+        <QuestionText>The Grant Agreement should include -</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14309</Questionid>
+        <QuestionText>Bank management system should include </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14319</Questionid>
+        <QuestionText>Process of `Control’ means -</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14312</Questionid>
+        <QuestionText>Human Resource Policy is formulated by   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14329</Questionid>
+        <QuestionText>Management letter should contain - </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14325</Questionid>
+        <QuestionText>Characteristics of control are -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14331</Questionid>
+        <QuestionText>Documentation of contribution in kind should include  -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14310</Questionid>
+        <QuestionText>Which of the following statement is incorrect: </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14320</Questionid>
+        <QuestionText>Who shall be involved in the processing of vouchers as per the authorization policy - </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14315</Questionid>
+        <QuestionText>Control process will complete if:  </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14321</Questionid>
+        <QuestionText>Corrective actions may lead to -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14328</Questionid>
+        <QuestionText>Need for Control arises as</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14317</Questionid>
+        <QuestionText>To have a strong budgetary control, it is required that - </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14322</Questionid>
+        <QuestionText>An investment register should contain -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14330</Questionid>
+        <QuestionText>MOU between donors and NGO should specify  -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14327</Questionid>
+        <QuestionText>Budget is used as a  -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14313</Questionid>
+        <QuestionText>Statutory audit acts as a control process when </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14332</Questionid>
+        <QuestionText>Good Control System should include  -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14316</Questionid>
+        <QuestionText>Measurement of actual performance is done by –</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>1094</CategoryId>
+        <Questionid>14308</Questionid>
+        <QuestionText>The Fixed Assets Register should contain -   </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14335</Questionid>
+        <QuestionText>Why we maintain –
+	i)  	Log Book (vehicle)
+	ii)	Advance &amp; Leave records of staffs
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14340</Questionid>
+        <QuestionText>Briefly explain  the need  for Control system.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14339</Questionid>
+        <QuestionText>Explain the concept of Public Audit.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14334</Questionid>
+        <QuestionText>Explain the importance of Management letter as a tool for control.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14337</Questionid>
+        <QuestionText>The budget is used as planning document as well as monitoring document – Explain.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table31" msdata:rowOrder="30">
+        <ROWID>31</ROWID>
+        <QuesNo>31</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14338</Questionid>
+        <QuestionText>How control system of an organization is influenced by statutory authorities?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table32" msdata:rowOrder="31">
+        <ROWID>32</ROWID>
+        <QuesNo>32</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14341</Questionid>
+        <QuestionText>Discuss the importance of segregation of duties while designing an internal control system</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table33" msdata:rowOrder="32">
+        <ROWID>33</ROWID>
+        <QuesNo>33</QuesNo>
+        <CategoryId>1095</CategoryId>
+        <Questionid>14336</Questionid>
+        <QuestionText>Why a Fixed Asset Register is maintained and summarize minimum five key information which a Fixed Asset Register should contain.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table34" msdata:rowOrder="33">
+        <ROWID>34</ROWID>
+        <QuesNo>34</QuesNo>
+        <CategoryId>1096</CategoryId>
+        <Questionid>14345</Questionid>
+        <QuestionText>What is control?  What are the benefits of control system?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table35" msdata:rowOrder="34">
+        <ROWID>35</ROWID>
+        <QuesNo>35</QuesNo>
+        <CategoryId>1096</CategoryId>
+        <Questionid>14346</Questionid>
+        <QuestionText>What do you mean by corrective actions and explain its relevance in a control system?  Also explain the corrective steps taken by the organisation when there are variations.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table36" msdata:rowOrder="35">
+        <ROWID>36</ROWID>
+        <QuesNo>36</QuesNo>
+        <CategoryId>1096</CategoryId>
+        <Questionid>14344</Questionid>
+        <QuestionText>Who are the main stakeholders of an NGO? Explain how the statutory authorities influence the control system mainly under Income Tax Act, 1961 and Foreign Contribution (Regulation) Act, 2010</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table37" msdata:rowOrder="36">
+        <ROWID>37</ROWID>
+        <QuesNo>37</QuesNo>
+        <CategoryId>1096</CategoryId>
+        <Questionid>14343</Questionid>
+        <QuestionText>Explain Internal Control System &amp; suggest Internal Control System for –
+	i)	Fixed Assets
+	ii)	Advances to staffs
+	iii)	Withdrawal of cash from bank
+
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table38" msdata:rowOrder="37">
+        <ROWID>38</ROWID>
+        <QuesNo>38</QuesNo>
+        <CategoryId>1096</CategoryId>
+        <Questionid>14342</Questionid>
+        <QuestionText>Why the Governing Board formulate policies?  Explain various types of policies being formulated by the Board.  Summarize key points of a Human Resource Policy with minimum 10 points.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

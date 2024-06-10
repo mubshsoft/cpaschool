@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+    function myfunction()
+    {
+        var x = document.URL;
+        document.getElementById("sharelnk").src = 'https://www.facebook.com/plugins/share_button.php?href=' + x + '&layout=button&size=small&mobile_iframe=true&width=60&height=3548822928518556';
+    //alert(x);
+    }
+    </script>
+</head>
+<body onload="myfunction()">
+    welcome to news section
+
+    <a class="twitter-share-button"
+       href="https://twitter.com/intent/tweet?text=Hello%20world"
+       data-size="large">
+        Tweet
+    </a><br /><br />
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a href="https://plus.google.com/share?url=http%3A%2F%2Fhttp://www.c-sharpcorner.com%3Fa%3Db%26c%3Dd">Share Google +</a>
+
+        <a class="button" href="https://www.facebook.com/sharer/sharer.php?app_id=3548822928518556&sdk=joey&u=http://cleverjournal.net/Editorial.aspx&display=popup&ref=plugin&src=share_button" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=580')">facebook share</a>
+
+</body>
+</html>

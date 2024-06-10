@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5617</Questionid>
+        <QuestionText>Non-profit organizations can accumulate profit in a given year</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5605</Questionid>
+        <QuestionText>Apart from providing the legal frame work and statutory custodial services, government’s role in the 1950s and 1960s</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5608</Questionid>
+        <QuestionText>Evolution of different types of voluntary organizations in different states of India over the years is embedded in the history, culture, social, economic and political contexts of particular states.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5625</Questionid>
+        <QuestionText>Voluntary organizations when raising funds should ensure that</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5611</Questionid>
+        <QuestionText>Income from for-profit activities of an NGO engaged in advancement of any other object of general utility, other than relief of poor, education, medical relief, preservation of environment and monuments or places or objects of general utility are</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5618</Questionid>
+        <QuestionText>Role of Governing Board of an NGO</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5621</Questionid>
+        <QuestionText>The National Policy on Voluntary Organizations was formulated by Government of India in</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5610</Questionid>
+        <QuestionText>Give two examples of voluntary organizations created by corporate/business houses to work for rural development.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5606</Questionid>
+        <QuestionText>Basic Constitution of a voluntary organization  </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5604</Questionid>
+        <QuestionText>Any donation received through charity boxes </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5603</Questionid>
+        <QuestionText>A Public Trust registered in one state can operate  </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5613</Questionid>
+        <QuestionText>JP’s Nav Nirman Movement in the late 1960s and mid 1970s </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5615</Questionid>
+        <QuestionText>Mobilizational voluntary organizations </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5623</Questionid>
+        <QuestionText>Transnational network</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5620</Questionid>
+        <QuestionText>The Central Social Welfare Board was established in 1951</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5601</Questionid>
+        <QuestionText>
+‘Organized’ voluntary organizations are located in the 
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5616</Questionid>
+        <QuestionText>Non-party political formations </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5609</Questionid>
+        <QuestionText>Give an example of a hospital registered as a non-profit charitable Society under the Society’s Act and collects charges from patients who use medical services provided by that hospital. Give full name, address and other contact details.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5626</Questionid>
+        <QuestionText>What is the acronym (abbreviation) used to refer to government created voluntary organizations (like the CAPART or the NACO)?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5607</Questionid>
+        <QuestionText>Difference between Peoples’ Organization (PO) and NGO is</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5602</Questionid>
+        <QuestionText> A Board that comprises of a small coterie of friends, family, assembled by the founder is called</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5624</Questionid>
+        <QuestionText>Transparency means that:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5612</Questionid>
+        <QuestionText>International donor organizations encourage participatory management of NGOs because</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5619</Questionid>
+        <QuestionText>The Board of an organization should ideally meet:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>472</CategoryId>
+        <Questionid>5622</Questionid>
+        <QuestionText>To obtain staff compliances to its policies and procedures, voluntary organizations rely on</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5629</Questionid>
+        <QuestionText>The draft of the Lokpal Bill includes NGOs under the jurisdiction of Lokpal. Explain the implications of the Lokpal Bill for NGOs engaged in conducting social audit of the implementation of the NREGS in a Block in your state.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5627</Questionid>
+        <QuestionText>Briefly name anyone useful software programme appropriate for the management of NGOs and mention how it can increase efficiency of an NGO</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5634</Questionid>
+        <QuestionText>Should NGOs engage in social advocacy on behalf of people with whom they work?  What are the implications of taking up advocacy work by an NGO receiving foreign contributions?  </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5632</Questionid>
+        <QuestionText>Why do the central and the state governments want to regulate the NGOs? </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5628</Questionid>
+        <QuestionText>Should Chief Executive Officer be a full and voting member in the Governing Board of an NGO? Explain why s/he should be or should not be a full voting member of the Governing Board. </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table31" msdata:rowOrder="30">
+        <ROWID>31</ROWID>
+        <QuesNo>31</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5631</Questionid>
+        <QuestionText>Discuss NGO-GO relationship. Explain with an example.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table32" msdata:rowOrder="31">
+        <ROWID>32</ROWID>
+        <QuesNo>32</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5633</Questionid>
+        <QuestionText>Briefly describe any two grey areas contained in any of the income or service tax laws applicable to voluntary organizations.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table33" msdata:rowOrder="32">
+        <ROWID>33</ROWID>
+        <QuesNo>33</QuesNo>
+        <CategoryId>473</CategoryId>
+        <Questionid>5630</Questionid>
+        <QuestionText>Does Right to Information Act apply to NGOs? Explain to which categories of NGOs is the law applicable? </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table34" msdata:rowOrder="33">
+        <ROWID>34</ROWID>
+        <QuesNo>34</QuesNo>
+        <CategoryId>474</CategoryId>
+        <Questionid>5716</Questionid>
+        <QuestionText>Case No 3
+
+
+i)	Write a brief report about the VOs working in health sector in your district
+ii)	List public health authorities responsible for implementing primary health services in your district 
+iii)	List the government programmes for promoting maternal and child health in your district. 
+iv)	Write a brief note on how government and NGOs can collaborate, supplement and complement each others’ work to improve health status of women and children in the district. 
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>20</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table35" msdata:rowOrder="34">
+        <ROWID>35</ROWID>
+        <QuesNo>35</QuesNo>
+        <CategoryId>474</CategoryId>
+        <Questionid>5714</Questionid>
+        <QuestionText>Case no 1.
+NREGS was responsible for bringing down out migration of tribal people of the village to some extent. But ever since the state Social Audit Society gave negative report about the performance of NREGS in a Gram Panchayat in Jharkhand the flow of funds from Central Ministry of Rural Development has been disrupted and employment could not be given to them, who demanded work. This has resulted in people migrating out of the village in search of employment as before. 
+
+As a Project Coordinator working in the NGO, XYZ located in the same district you are responsible for livelihood promotion. You find out that the Sarpanch of the Gram Panchayat is illiterate tribal lady and the NREGS supervisor had given fraudulent reports about the work done under NREGS in the year 2012-13. That is why social audit report was negative. 
+
+The NGO, XYZ is being funded by a German funding agency for over ten years. You met district and state level authorities and the matter is resolved this one time and the local authorities restored implementation of NREGS.
+
+But you want to build the capacity of the eight lady Sarpanches and seven SC Panchayat members in the district and empower them so that this type of problem does not arise again. But this activity was neither included in the work plan for the financial year 2013-14 nor was a separate budget made for taking this work. The district collector who is a Board member of your NGO, XYZ asks you to take up this activity knowing fully that the NGO receives foreign contributions.
+a)	As the Project Coordinator assigned to this activity, please write a letter to the donor to request permission to take up this activity. You explain what activities you propose to take up, the duration, costs involved and the budget heads under which this expenditure can be covered in the letter. Your explanation should be along the following points given below: 
+i)	How is this activity related to the mission of your organization?
+ii)	Whether, this activity can be considered to be political in nature?
+
+b)	As a program Coordinator, in charge of this activity, describe the  preparations that will be required for effective implementation of this activity
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>20</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table36" msdata:rowOrder="35">
+        <ROWID>36</ROWID>
+        <QuesNo>36</QuesNo>
+        <CategoryId>474</CategoryId>
+        <Questionid>5715</Questionid>
+        <QuestionText>Case no 2The mission of the NGO, ABCD located in a small municipal town near Udaipur in Rajasthan is to prevent child marriages. The aim is to enroll girl children in school and to retain them in school till they complete 10th standard. As a part of this objective, the NGO has agreed to build capacities of members of School Management Committees of 15 Municipal Madhyamik schools in the town and to conduct life-skills workshops for the 8th and 9th standard girls in the 15 schools. The NGO, ABCD is funded entirely by a public sector company as part of its Corporate Social Responsibility (CSR). As a Board Member of the organization, you have to place a proposal for undertaking these activities to get the proposal approved by the company.  Prepare a concept note about the proposed activity. The concept note should be prepared along the following points:i)	Brief data about status of school education in the District  (please refer to latest Annual Status of Education Report for information on Rajasthan available on line internet ASER website)ii)	Brief reference to the clause in the Right To Education Act regarding reduction of dropout levels and mandate to retain children in school iii)	Brief outline of the proposed intervention strategy of the two activities.  </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>20</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

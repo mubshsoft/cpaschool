@@ -1,0 +1,7 @@
+  <asp:TemplateField HeaderText="" ItemStyle-HorizontalAlign="Left">
+                                                                                                                    <ItemTemplate>
+                                                                                                                    <%# (GrdStudent.PageSize * GrdStudent.PageIndex) + Container.DisplayIndex + 1 %>
+                                                                                                                   </ItemTemplate>
+                                                                                                            </asp:TemplateField>
+
+ItemStyle-HorizontalAlign="Left"

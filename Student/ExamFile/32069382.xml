@@ -1,0 +1,528 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8979</Questionid>
+        <QuestionText>What does the ‘conservatism’ convention state?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8995</Questionid>
+        <QuestionText>Which of the following type of organizations serve specific population in a narrow geographical area in individual developing countries?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8988</Questionid>
+        <QuestionText>What is the golden rule for nominal accounts?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8996</Questionid>
+        <QuestionText>Which of the following is a correct equation?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8975</Questionid>
+        <QuestionText>Which of the following errors will be reflected in the trial balance?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8989</Questionid>
+        <QuestionText>Carlo ltd. is registered under The Companies Act as a section 25 company. It wants your opinion on the basis of accounting to be followed. What would your suggestion be?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8974</Questionid>
+        <QuestionText>In accordance with which principle of accounting are capital assets shown in the books at cost less depreciation, instead of their net realisable value?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8994</Questionid>
+        <QuestionText>Capital receipts and capital payments are excluded in the following </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8973</Questionid>
+        <QuestionText>Which of the following is an example of deferred revenue expenditure?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8990</Questionid>
+        <QuestionText>Which one of the following is not the primary book of account?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8977</Questionid>
+        <QuestionText>Which of the following statements is incorrect?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8984</Questionid>
+        <QuestionText>Details of the receipts of an organization are as below:
+•	Rs. 1,50,000 received in total in the financial year 2013-14
+•	Rs. 20,000 out of the above figure has been received in advance for financial year 2014-15
+•	Rs. 40,000 remains outstanding as at 31st march 2014
+•	Rs. 15,000 was received in 2012-13 for financial year 2013-14
+
+What amounts are to be reflected in the receipts and payments account and in the balance sheet?
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8986</Questionid>
+        <QuestionText>What does the money measurement concept state?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8978</Questionid>
+        <QuestionText>‘The accounting process can be split into four main streams’. Which of the following is one of those streams?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8983</Questionid>
+        <QuestionText>A grant received from a donor for the purpose of administration costs of the organization only, would fall under which category:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8985</Questionid>
+        <QuestionText>How do the makers of the financial statements ensure that the basis for the amounts stated are understood by the readers?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8993</Questionid>
+        <QuestionText>……………… is the record of all the transactions pertaining to a person, asset, liability, income or expenditure which have taken place during a specified period and shows the net effect of all these transactions finally</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8987</Questionid>
+        <QuestionText>Which of the following statements is false?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8991</Questionid>
+        <QuestionText>Which funds are held permanently and income so derived is included in the financial statements?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8982</Questionid>
+        <QuestionText>What is the treatment for deferred revenue expenditure in the books of accounts?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8972</Questionid>
+        <QuestionText>Which of the following statements is in contravention of the dual-aspect concept?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8976</Questionid>
+        <QuestionText>What should an organization preferably do when the donor’s reporting year is different from the accounting year?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8981</Questionid>
+        <QuestionText>Which is one of the major drawbacks of single entry system?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8980</Questionid>
+        <QuestionText>What is the provision of The Income Tax Act, 1961 state on the method of accounting to be followed by organizations?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>710</CategoryId>
+        <Questionid>8992</Questionid>
+        <QuestionText>M/s. syntax computers limited account is</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>9003</Questionid>
+        <QuestionText>In which circumstances would you recommend that fund accounting be followed by NGOs. What considerations and disclosures requirements would you ensure while adopting fund accounting concepts.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Descriptive</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>8998</Questionid>
+        <QuestionText>What are the various types of reconciliations that an NPO would  normally undertake and at what periodicity</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>9006</Questionid>
+        <QuestionText>Enter the following transactions in the cash book and arrive at the closing balance as on 14th January 2016:-</QuestionText>
+        <UploadQuestionImagePath>Examid_272section II.jpg.bmp</UploadQuestionImagePath>
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Image Question</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>9000</Questionid>
+        <QuestionText>ZED is an NGO working towards providing sanitation facilities in rural and remote villages in Andhra Pradesh. It has decided to maintain centralized, computerized accounting. What are some of the steps and control procedures that ZED ltd can take to ensure proper accounting of all the transactions?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>8999</Questionid>
+        <QuestionText>Write the journal entries for the following transactions and the categories of debit, credit side of each transaction and also reflect the same as they would appear in income and expenses / balance sheet:
+a)	Rs.1500 received towards interest which was receivable during previous year
+b)	Procured laptop from Ms. Computer Inventors limited for which payment will be made after one month 
+c)	Rs.10,000 was payable as salaries
+d)	Rs.500 received back from Mr. Krish from advance given to him.
+e)	Paid Rs.560 towards stationeries
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table31" msdata:rowOrder="30">
+        <ROWID>31</ROWID>
+        <QuesNo>31</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>8997</Questionid>
+        <QuestionText>Write a short note on potential users of the financial reports of the NPOs? </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table32" msdata:rowOrder="31">
+        <ROWID>32</ROWID>
+        <QuesNo>32</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>9001</Questionid>
+        <QuestionText>Explain the difference between:
+i.	Income and Expenditure account and Profit and Loss account
+ii.	Book keeping and accounting
+iii.	Journals and ledgers
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table33" msdata:rowOrder="32">
+        <ROWID>33</ROWID>
+        <QuesNo>33</QuesNo>
+        <CategoryId>711</CategoryId>
+        <Questionid>9002</Questionid>
+        <QuestionText>6)	On checking the bank book of Good Care Society for April 2015, with the bank statements of the designated Foreign Contribution bank account no 63670009000 with SBI, the following differences were noted:
+
+a.	Bank Book showed a balance of Rs 3,72,593 as on 30th April 2015
+b.	 A cheque issued on 15th April of Rs. 6,300 had been taken as Rs. 3,600 by bank 
+c.	A cheque for Rs 1,25,000 deposited into the designated Foreign Contribution bank account no 63670009000, had been debited by  bank to the local bank account no 63670005055.
+d.	Cheques amounting to Rs 70000 issued to Surabhi suppliers, had not yet been presented to the bank
+e.	Cheques amounting to Rs 60000 received from Generous Trust, deposited in the bank, had not been credited by the bank
+f.	Bank charges of Rs 750 as per Bank statement had not been taken into the cash Book
+
+You are required to prepare a Bank reconciliation statement on 30th April 2015 for the designated Foreign Contribution bank account no 63670009000  and arrive at the bank balance as at 30th April 2015
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Descriptive</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table34" msdata:rowOrder="33">
+        <ROWID>34</ROWID>
+        <QuesNo>34</QuesNo>
+        <CategoryId>712</CategoryId>
+        <Questionid>9008</Questionid>
+        <QuestionText>What are the various considerations that need to be taken into account while developing the accounting structure or “Chart of Accounts” of an NGO having Foreign and Indian contributions, donor funded projects, as also income generating activities?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table35" msdata:rowOrder="34">
+        <ROWID>35</ROWID>
+        <QuesNo>35</QuesNo>
+        <CategoryId>712</CategoryId>
+        <Questionid>9009</Questionid>
+        <QuestionText>Pass rectification entries for the following: 
+a)	Cash sale of greeting cards has been entered as Rs. 2500 instead of Rs. 5,000
+b)	Advance salary paid Rs 6,000 has been posted to salary a/c 
+c)	cash received from Jadu Rs 8,640 has been posted to the credit of Madhu's account
+d)	Purchase of building charged to repairs and maintenance account amounting to Rs 50000
+e)	Advance given for travel has been debited to training a/c .
+f)	Rs. 2,000 paid to Mr. Ram was wrongly debited to Mr. Sam
+g)	 Rent paid of Rs.15,000 was wrongly entered as 1,500
+h)	Regular maintenance cost of Rs. 25,000 was wrongly capitalized [wrongly debited to Computer A/C]
+i)	Stationery bought, worth Rs. 1,500 was wrongly entered as 1050
+j)	Rent deposit paid of Rs. 50,000 was wrongly debited to Rent account. [expense account
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table36" msdata:rowOrder="35">
+        <ROWID>36</ROWID>
+        <QuesNo>36</QuesNo>
+        <CategoryId>712</CategoryId>
+        <Questionid>9010</Questionid>
+        <QuestionText>Prepare an inventory/stock register for the following transactions. Also arrive at the closing stock :-</QuestionText>
+        <UploadQuestionImagePath>Examid_272section III 2.jpg.bmp</UploadQuestionImagePath>
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Image Question</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table37" msdata:rowOrder="36">
+        <ROWID>37</ROWID>
+        <QuesNo>37</QuesNo>
+        <CategoryId>712</CategoryId>
+        <Questionid>9007</Questionid>
+        <QuestionText>From the following information prepare Income and Expenditure Account of the Club for the year ended 31.3.2015. Literacy Club follows accrual basis of accounting. 
+Clearly list down the accounting policies and other disclosures on the basis of which you draw out the above accounts           
+</QuestionText>
+        <UploadQuestionImagePath>Examid_272Sec III.jpg.bmp</UploadQuestionImagePath>
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Image Question</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table38" msdata:rowOrder="37">
+        <ROWID>38</ROWID>
+        <QuesNo>38</QuesNo>
+        <CategoryId>712</CategoryId>
+        <Questionid>9005</Questionid>
+        <QuestionText>What is the need for donor reporting? What information needs to be present in any report submitted to the donors and what is the significance of this information? What internal controls can be kept in place to ensure that all donor requirements are fulfilled and that reporting to donors is accurate?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

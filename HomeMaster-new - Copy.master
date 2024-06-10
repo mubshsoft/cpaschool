@@ -1,0 +1,1483 @@
+﻿<%@ Master Language="VB" CodeFile="HomeMaster-new.master.vb" Inherits="HomeMaster_new" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta property="og:image" content="" /> 
+<meta property="og:title" content="CPA Services" />
+<meta property="og:description" content="CPA Services" />
+<meta property="og:site_name" content="Cpaservices" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="public/assets/themes/theme-1/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="public/assets/themes/theme-1/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="public/assets/themes/theme-1/css/animate.css" /><link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="public/assets/themes/theme-1/css/style.css" /> 
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="stylesheet" href="css/sl-slide.css"/>
+<link rel="stylesheet" type="text/css" href="public/assets/themes/theme-1/js/magnificpopup/magnific-popup.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&amp;display=swap" rel="stylesheet"> 
+
+<link rel="stylesheet" type="text/css" href="public/assets/themes/theme-1/css/lightgallery.css" />
+<link rel="stylesheet" type="text/css" href="public/assets/themes/theme-1/css/owl.carousel.min.css" />
+<style>
+
+.login-btn 
+{
+    border-radius: 7px;
+    border: solid 2px #fff;
+    padding: 0px 10px!important;
+}
+.btn-success {background-color: #0e245d!important;}
+.btn-success:hover {background-color: #10296b!important;}
+.btn-success:active:focus {background-color: #0e245d!important;}
+
+</style>
+
+<style>
+.pagination-ys {
+    /*display: inline-block;*/
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination-ys table > tbody > tr > td {
+    display: inline;
+}
+
+.pagination-ys table > tbody > tr > td > a,
+.pagination-ys table > tbody > tr > td > span {
+    position: relative;
+    float: left;
+    padding: 8px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #dd4814;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+}
+
+.pagination-ys table > tbody > tr > td > span {
+    position: relative;
+    float: left;
+    padding: 8px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;    
+    margin-left: -1px;
+    z-index: 2;
+    color: #aea79f;
+    background-color: #f5f5f5;
+    border-color: #dddddd;
+    cursor: default;
+}
+
+.pagination-ys table > tbody > tr > td:first-child > a,
+.pagination-ys table > tbody > tr > td:first-child > span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.pagination-ys table > tbody > tr > td:last-child > a,
+.pagination-ys table > tbody > tr > td:last-child > span {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.pagination-ys table > tbody > tr > td > a:hover,
+.pagination-ys table > tbody > tr > td > span:hover,
+.pagination-ys table > tbody > tr > td > a:focus,
+.pagination-ys table > tbody > tr > td > span:focus {
+    color: #97310e;
+    background-color: #eeeeee;
+    border-color: #dddddd;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-177539114-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-177539114-1');
+</script>
+ <script language="javascript" type="text/javascript">
+     function openmodalPopUp(popupId) {
+        // $('#' + popupId).modal('show');
+         $('#' + popupId).show();
+     }
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="index-page">
+
+  <div class="nav_out"></div>
+<header class="header fullwidth">
+	<div class="headsec fullwidth">
+	<div class="container-fluid">
+	<div class="row">
+	<div class="header-right-box">
+	<!-- <div class="topsec">
+			<ul>
+              	                <li class="memberbg"><a class="showpopup membertitle" title="memberlogin"><i class="loginicon"></i>Member Login</a></li>
+                            	            </ul>
+		        <ul class="sociallinks">
+		          		          
+		        </ul>
+		      
+	</div> -->
+
+			<div class="navicon"><span></span></div>
+		<div class="topmenu">
+			
+			                            
+
+			  <ul>
+			<!-- 	<li class="active"><a href="https://www.cpaservices.in">Home</a></li> -->
+				<li><a href="AboutUs.aspx">About Us</a>
+					
+				</li>
+
+				<%--<li><a href="#">Courses Offered</a>
+					<ul>
+						<li>
+							<a href="#">Diploma in Financial Management and Accountability</a>
+							
+						</li>
+						<li>
+							<a href="#">NPO Governance Program</a>
+							 
+						</li>
+						<li>
+							<a href="#">Planning, Monitoring and Evaluation </a>
+							
+						</li>
+						<li>
+							<a href="#">21 Days crash course on FCRA</a> 
+							
+						</li>
+						
+					</ul>
+				</li>--%>
+                <li><a href="#">Courses Offered</a>
+					
+						<ul>
+                                <asp:Repeater ID="rptrSubMeu" runat="server">
+                                    <ItemTemplate>
+                                        <li style="font-size:14px"><a href='CourseDetailsInfo.aspx?CID=<%#Eval("CourseId")%>'><strong><%#Eval("CourseName")%></strong></a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                       </ul>
+				</li>
+				
+				<%--<li><a href="#">Knowledge Center</a>
+					<ul>
+						<li><a href="#">DFMA</a>
+                        <ul>
+						<li><a href="#">Video</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Articles</a></li>
+                        </ul>
+                        </li>
+						<li><a href="#">NPO</a>
+                        <ul>
+						<li><a href="#">Video</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Articles</a></li>
+                        </ul>
+                        </li>
+						<li><a href="#">PME</a>
+                        <ul>
+						<li><a href="#">Video</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Articles</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#">21 Days crash course on FCRA</a>
+                        <ul>
+						<li><a href="#">Video</a></li>
+                        <li><a href="#">Audio</a></li>
+                        <li><a href="#">Articles</a></li>
+                        </ul>
+                        </li>
+					</ul> 
+				</li>--%>
+
+                <li><a href="#" id="aKd" runat="server">Knowledge Center</a>
+					<ul>
+						 <asp:Repeater ID="rptKd" runat="server">
+                                    <ItemTemplate>
+                                        <li style="font-size:14px;"><a href='KnowledgeCenterDetails.aspx?SubjectType=<%#Eval("SubjectType")%>'><strong><%#Eval("SubjectType")%></strong></a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+					</ul> 
+				</li>
+				<li id="regispage" ><a href="registration1.aspx?s=3">Register</a></li>
+                <li id="loginpage"><a href="../login.aspx" class="login-btn"><span>Login</span></a></li>
+                <li id="UserDashboardpage" style="margin-right: 10px;"><a href="#" class="login-btn"><span id="dashboardpanel"></span></a> </li>
+                <li id="logoutpage"><a href="../logout.aspx" class="login-btn"><span>Logout</span></a></li>
+				<li style="visibility:hidden"><span id="CallBack"><a href="#" onclick="javascript:openmodalPopUp('ModalPopupDiv');" style="color:#fe912c"><i class="icon fphoneicon"></i> Request A Callback</a></span></li>
+			</ul> 
+		</div>
+			</div>
+	<div class="logo">
+		<a href="Default-new.aspx"><img src="public/assets/themes/theme-1/images/logo.png" alt="logo" border="0"  class="img-responsive" /></a>
+	</div>
+</div>
+</div>
+</div>
+	
+	
+	
+
+
+
+	<!-- <div class="searchform" style="position:relative;">
+		<form name="searchForm" action="https://www.cpaservices.in/products" class="search_form" onsubmit="return submit_search_form();">
+			<input type="text" name="keyword" value="" placeholder="Search for products, brands and more" autocomplete="off" /><button><i class="searchicon"></i></button>
+		</form>
+
+		<div id="search_list" style="z-index: 99; position: absolute; top: 42px; /* bottom: 0; */ width: 100%;"></div>
+	</div>
+
+
+	<form name="searchForm2" action="https://www.cpaservices.in/products"></form> -->
+
+</header>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   
+    <!--Bottom-->
+<section id="bottom" class="main">
+    <!--Container-->
+    <div class="container">
+
+        <!--row-fluids-->
+        <div class="row">
+
+            <!--Contact Form-->
+            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 mob-margin">
+                <h4>ADDRESS</h4>
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+
+
+                <ul class="unstyled address">
+                    <li>
+                        <i class="icon-home"></i><h5><u>Registered Office :</u></h5><br />
+CPA Services Pvt. Ltd<br />
+233, Sunrise Plaza,<br />
+Vasundhara Enclave,
+Delhi -110096
+
+                    </li>
+                    <li style="border: solid 1px #fe912c; padding: 10px; border-radius: 10px; text-align: center; background: #fe912c;"><a href="#" onclick="javascript:openmodalPopUp('ModalPopupDiv');" style="color:#fff; text-decoration: none;"><i class="icon-phone"></i> Request A Callback</a></li>
+                </ul>
+    
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+
+<ul class="unstyled address">
+<li>
+                        <i class="icon-home"></i><h5><u>Correspondence Address :</u></h5><br />A-5, Sector 26,<br/>Noida - 201301, UP
+
+
+                    </li>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+<ul class="unstyled address">
+
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <strong>Email: </strong> <a href="mailto:cpa@cpaservices.in">cpa@cpaservices.in</a>
+                    </li>
+                    <li>
+                        <i class="icon-globe"></i>
+                        <strong>Website:</strong> <a href="http://www.cpaservices.in/">www.cpaservices.in</a>
+                    </li>
+                    <li>
+                        <i class="icon-phone"></i>
+                        <strong>Phone:</strong> + 91-120-4773225 
+                    </li>
+                </ul>
+</div>
+</div>
+
+            </div>
+            <!--End Contact Form-->
+
+            <!--Important Links-->
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <p class="footer-heading">Quick Links</p>
+                <div class="footer-links" >
+                    <a href="AboutUs.aspx">About Us</a><br /><br />
+                    <a href="DownloadRegistration.aspx">Downloads</a><br /><br />
+                    <a href="Faq.aspx">FAQ</a><br /><br />
+                    <a href="ContactUs.aspx">Contact Us</a>
+                    
+                   
+            </div>
+            </div>
+            <!--Important Links-->
+
+          
+
+    </div>
+    <!--/row-fluid-->
+
+</div>
+<!--/container-->
+
+</section>
+<!--/bottom-->
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 cp">
+               <%-- &copy; 2007 <a target="_blank" href="http://fmsflearningsystems.org/" title="FMSF">FMSF</a>. All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> --%>
+            </div>
+            <!--/Copyright-->
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <ul class="social pull-right">
+                    <li><a href="https://www.facebook.com/CPA-Services-Pvt-Ltd-1108874689216186" target="_blank"><i class="icon-facebook"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/cpa-services-589b9b1a0" target="_blank"><i class="icon-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCiFdELAk1HbVAIRxCFMYtQw" target="_blank"><i class="icon-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/cpaservicesa5/" target="_blank"><i class="icon-instagram"></i></a></li>                   
+                </ul>
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
+                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
+            </div>
+            <!--/Goto Top-->
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+<div class="modal fade in" id="ModalPopupDiv" aria-hidden="false">
+    <div class="modal-dialog" >
+    <div class="modal-content">
+    <div class="modal-header" >
+        <button type="button" class="close" data-dismiss="modal" onclick="CloseCallBack();" style="margin-top:0px!important;">&times;</button>
+        <h4>Request a call back </h4>
+    </div>
+    <!--Modal Body-->
+    <div class="modal-body" width="600px;">
+        
+        <div class="row" >
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><input type="text" id="Name" name="Name" class="form-control" placeholder="Enter Your Name"></div>
+           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"><input type="text" id="Email" name="Email" class="form-control" placeholder="Enter Your Email"></div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12"> <input type="text" id="Mobile" name="Mobile" class="form-control" placeholder="Enter Your Mobile Number"></div>
+        </div>
+        <div class="row" >&nbsp;</div>
+        <div class="row" >
+            
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:center"><button type="submit" id="btnSent" class="btn btn-success">Sent</button></div>
+        </div>
+        
+    </div>
+        </div>
+    </div>
+    <!--/Modal Body-->
+</div>
+
+<!--  Login form -->
+<div class="modal hide fade in" id="loginForm" aria-hidden="false">
+    <div class="modal-header">
+        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
+        <h4>Login Form</h4>
+    </div>
+    <!--Modal Body-->
+    <div class="modal-body">
+        <form class="form-inline" action="index.html" method="post" id="form-login">
+            <input type="text" class="input-small" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password">
+            <label class="checkbox">
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <a href="#">Forgot your password?</a>
+    </div>
+    <!--/Modal Body-->
+</div>
+<!--  /Login form -->
+</body>
+
+<script type="text/javascript" src="public/assets/themes/theme-1/js/jquery.min.js"></script>
+<script type="text/javascript" src="public/assets/themes/theme-1/js/jquery-ui.js"></script>
+<script type="text/javascript" src="public/assets/themes/theme-1/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="public/assets/themes/theme-1/js/magnificpopup/magnific-popup.min.js"></script>
+
+<script type='text/javascript' src='../platform-api.sharethis.com/js/sharethis.js#property=5e7096415f15980012f63981&product=inline-share-buttons&cms=sop' async='async'></script>
+<script src="../Calendar/jquery-1.10.2.min.js"   ></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+       
+       var name = '<%= Session("username") %>'  ;
+        if(name =="")
+        {
+            $('#logoutpage').css("display",'none');
+            $('#UserDashboardpage').css("display",'none');
+            $('#loginpage').show();
+        }
+        else{
+            var role = '<%= Session("role") %>'  ;
+            $('#loginpage').css("display",'none');
+            $('#regispage').css("display",'none');
+            $('#UserDashboardpage').show();
+            var dashboard= role + ' Dashboard';
+            $('#dashboardpanel').append(dashboard);
+            $('#UserDashboardpage').click(function(){
+                
+                if(role=='Admin')
+                {
+                    window.location.href = "Admin/AdminLogin.aspx";
+                }
+                else if(role=='Faculty')
+                {
+                    window.location.href = "faculty/Facultypanel.aspx";
+                }
+            });
+            $('#logoutpage').show();
+        }
+
+        $(".showpopup").click(function (event) {
+            event.preventDefault();
+            var id = $(this).attr("title");
+            $(".fildbox").hide();
+            $("#" + id).show();
+            $('.popupbg').fadeIn();
+
+
+        });
+
+
+        $(document).on("click", ".form-control", function (e) {
+            e.preventDefault();
+            $(this).siblings('.help-block').html('');
+        });
+
+        $(".closebtn").click(function () {
+            $('.popupbg').fadeOut();
+            document.registerForm.reset();
+            document.loginForm.reset();
+
+            $(".remove-error").click();
+
+        });
+
+        $(document).ready(function () {
+            $(".remove-error").click(function () {
+                $(this).removeClass("help-block");
+                $(this).removeClass("has-error");
+                $(this).siblings('.help-block').html('');
+            });
+        });
+
+        $(".signtitle").click(function () {
+            $('.membertitle').removeClass('active');
+            $('.signtitle').addClass('active');
+            $(".fildbox").hide();
+            $('#newsignup').show();
+        });
+
+        $(".membertitle").click(function () {
+            $('.signtitle').removeClass('active');
+            $('.membertitle').addClass('active');
+            $(".fildbox").hide();
+            $('#memberlogin').show();
+        });
+
+    });
+
+
+</script>
+<script language="javascript" type="text/javascript">
+    function CloseCallBack()
+    {
+        $("#ModalPopupDiv").hide();
+    }
+
+    $(document).ready(function () {
+      
+        $("#btnSent").click(function () {
+
+            var Name = $("#Name").val();
+            var Email = $("#Email").val();
+
+            var Mobile = $("#Mobile").val();
+
+            if (Name == "") {
+                alert('Enter Name');
+            }
+            else if (Email == "") {
+                alert('Enter Email');
+            }
+            else if (Mobile == "") {
+                alert('Enter Mobile Number');
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "KnowledgeCenterDetails.aspx/CallBackdata",
+
+
+                data: "{Name: '" + Name + "', Email: '" + Email + "', Mobile: '" + Mobile + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    var d = data.d;
+
+                    if (d == "-1") {
+                        alert("Error Inserting!");
+                    }
+
+                    else {
+                        alert("Thank you for submitting the details.");
+                        //$("#msg").html("Success!");
+                        window.location.href = "Default-new.aspx";
+                    }
+
+                },
+                failure: function (response) {
+                    alert("Error");
+                }
+            });
+
+
+        });
+    });
+    </script>
+
+ <script type="text/javascript">
+     $(window).scroll(function () {
+         if ($(this).scrollTop() >= 250) {
+             $('#topscroll').fadeIn(200);
+         } else {
+             $('#topscroll').fadeOut(200);
+         }
+     });
+     $('#topscroll').click(function () {
+         $('body,html').animate({
+             scrollTop: 0
+         }, 500);
+     });
+
+
+     $('.newslettersubsBtn').click(function (e) {
+         $(".newslettersubs_hide").show();
+         $(".newsletter_messages").html('');
+     });
+
+     $('.subscribeBtn').click(function (e) {
+         e.preventDefault();
+
+         var currSelector = $(this);
+         var y = true;
+         var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+         var email = currSelector.siblings("input[name='subscribe_email']").val().trim();
+         var name = currSelector.siblings("input[name='subscribe_name']").val().trim();
+         //alert(email); return false;
+
+         if (name == '') {
+             currSelector.siblings('.subscribe_name_error').html('Name is required.');
+             y = false;
+         }
+
+         if (email == '') {
+
+             currSelector.siblings('.subscribe_email_error').html('Email is required.');
+             y = false;
+         }
+         if (email != '') {
+             if (!filter.test(email)) {
+                 currSelector.siblings('.subscribe_email_error').html('Invalid Email.');
+                 y = false;
+             }
+         }
+
+         if (y) {
+             var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+             $.ajax({
+                 url: 'https://www.cpaservices.in/common/newsletterSubscribe',
+                 type: 'POST',
+                 data: { email: email, name: name },
+                 dataType: 'JSON',
+                 async: false,
+                 headers: { 'X-CSRF-TOKEN': _token },
+                 success: function (resp) {
+                     if (resp.success) {
+
+                         if (resp.message) {
+                             currSelector.siblings('.newsletter_messages').html('<span>' + resp.message + '</span>');
+                             currSelector.siblings(".subscribe_email").val('');
+                             currSelector.siblings(".subscribe_name").val('');
+                             currSelector.siblings(".newsletter_messages").addClass('succ_msg');
+                             $(".newslettersubs_hide").hide();
+
+                             //currSelector.siblings(".newsletter_messages").fadeOut(3000);
+
+                         }
+
+                     }
+                     else {
+                         if (resp.message) {
+                             currSelector.siblings('.newsletter_messages').html('<span>' + resp.message + '</span>');
+                             currSelector.siblings(".subscribe_email").val('');
+                             currSelector.siblings(".subscribe_name").val('');
+                             $(".newslettersubs_hide").show();
+                         }
+                     }
+                 }
+
+             });
+         }
+         return false;
+     });
+
+
+
+
+     $('.smsalertSubsBtn').click(function (e) {
+         $(".smsalert_hide").show();
+         $(".smsalert_messages").html('');
+     });
+
+     $('.smsalertBtn').click(function (e) {
+         e.preventDefault();
+
+         var currSelector = $(this);
+         var y = true;
+         var filter_email = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+         var filter_phone = /^\d*(?:\.\d{1,2})?$/;
+         var name = currSelector.siblings("input[name='smsalert_name']").val().trim();
+         var email = currSelector.siblings("input[name='smsalert_email']").val().trim();
+         var phone = currSelector.siblings("input[name='smsalert_phone']").val().trim();
+         //alert(email); return false;
+
+         if (name == '') {
+             currSelector.siblings('.smsalert_name_error').html('Name is required.');
+             y = false;
+         }
+
+         if (email == '') {
+
+             currSelector.siblings('.smsalert_email_error').html('Email is required.');
+             y = false;
+         }
+         if (email != '') {
+             if (!filter_email.test(email)) {
+                 if (!filter_email.test(email)) {
+                     currSelector.siblings('.smsalert_email_error').html('Invalid Email.');
+                     y = false;
+                 }
+             }
+         }
+
+         if (phone == '') {
+             currSelector.siblings('.smsalert_phone_error').html('Phone is required.');
+             y = false;
+         }
+
+
+         if (phone != '') {
+             if (filter_phone.test(phone)) {
+                 if (phone.length != 10) {
+                     currSelector.siblings('.smsalert_phone_error').html('Please put 10 digit Phone number.');
+                     y = false;
+
+                 }
+             }
+             else {
+                 currSelector.siblings('.smsalert_phone_error').html('Not valid number.');
+                 y = false;
+             }
+
+         }
+
+
+         if (y) {
+             var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+             $.ajax({
+                 url: 'https://www.cpaservices.in/common/smsAlertSubscribe',
+                 type: 'POST',
+                 data: { name: name, email: email, phone: phone },
+                 dataType: 'JSON',
+                 async: false,
+                 headers: { 'X-CSRF-TOKEN': _token },
+                 success: function (resp) {
+                     if (resp.success) {
+
+                         if (resp.message) {
+                             currSelector.siblings('.smsalert_messages').html('<span>' + resp.message + '</span>');
+                             currSelector.siblings(".smsalert_email").val('');
+                             currSelector.siblings(".smsalert_name").val('');
+                             currSelector.siblings(".smsalert_phone").val('');
+                             currSelector.siblings(".smsalert_messages").addClass('succ_msg');
+                             $(".smsalert_hide").hide();
+
+                             //currSelector.siblings(".newsletter_messages").fadeOut(3000);
+
+                         }
+
+                     }
+                     else {
+                         if (resp.message) {
+                             currSelector.siblings('.smsalert_messages').html('<span>' + resp.message + '</span>');
+                             currSelector.siblings(".smsalert_email").val('');
+                             currSelector.siblings(".smsalert_name").val('');
+                             currSelector.siblings(".smsalert_phone").val('');
+                             $(".smsalert_hide").show();
+                         }
+                     }
+                 }
+
+             });
+         }
+         return false;
+     });
+
+
+
+     $('.registerBtn').click(function (e) {
+         e.preventDefault();
+
+         var currSelector = $(this);
+
+         var btn_name = $(this).attr('name');
+         var btn_val = 1;
+         submitRegisterForm(btn_name, currSelector);
+     });
+
+     function submitRegisterForm(type, currSelector) {
+         var registerForm = $("form[name=registerForm]");
+
+         var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+         //sendingOtp = 1;
+         $.ajax({
+             url: "https://www.cpaservices.in/account/ajax_register",
+             type: "POST",
+             data: registerForm.serialize() + '&' + type + '=1',
+             dataType: "JSON",
+             headers: {
+                 'X-CSRF-TOKEN': _token
+             },
+             cache: false,
+             beforeSend: function () {
+                 registerForm.find(".help-block").remove();
+                 registerForm.find(".has-error").removeClass("has-error");
+             },
+             success: function (resp) {
+                 if (resp.success) {
+                     //window.location.reload();
+                     if (resp.message) {
+                         $(".registerBox").html(resp.message);
+                         //document.registerForm.reset();
+
+
+                         /*setTimeout(function(){
+                         $(".registerBox .alertMsg .alert").slideUp();
+                         }, 2000);*/
+
+                         //showFooterAlert(resp.message);
+                         document.registerForm.reset();
+                     }
+                 }
+                 else if (resp.errors) {
+
+                     var errTag;
+                     var countErr = 1;
+
+                     $.each(resp.errors, function (i, val) {
+
+                         registerForm.find("[name='" + i + "']").addClass("has-error");
+                         //registerForm.find( "[name='" + i + "']" ).parent().append( '<p class="help-block">' + val + '</p>' );
+
+                         if (countErr == 1) {
+                             errTag = registerForm.find("[name='" + i + "']");
+                         }
+                         countErr++;
+
+                     });
+
+                     if (errTag) {
+                         errTag.focus();
+                     }
+                 }
+             }
+         });
+     }
+
+
+     $('.loginBtn').click(function (e) {
+         e.preventDefault();
+         var currSelector = $(this);
+         submitLoginForm();
+     });
+
+     function submitLoginForm() {
+
+         var loginForm = $("form[name=loginForm]");
+
+         var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+         //sendingOtp = 1;
+         $.ajax({
+             url: "https://www.cpaservices.in/account/ajax_login",
+             type: "POST",
+             data: loginForm.serialize(),
+             dataType: "JSON",
+             headers: {
+                 'X-CSRF-TOKEN': _token
+             },
+             cache: false,
+             beforeSend: function () {
+                 loginForm.find(".help-block").remove();
+                 loginForm.find(".has-error").removeClass("has-error");
+             },
+             success: function (resp) {
+                 if (resp.success) {
+                     window.location.reload();
+                 }
+                 else if (resp.errors) {
+
+                     var errTag;
+                     var countErr = 1;
+
+                     $.each(resp.errors, function (i, val) {
+
+                         loginForm.find("[name='" + i + "']").addClass("has-error");
+                         //loginForm.find( "[name='" + i + "']" ).parent().append( '<p class="help-block">' + val + '</p>' );
+
+                         if (countErr == 1) {
+                             errTag = loginForm.find("[name='" + i + "']");
+                         }
+                         countErr++;
+
+                     });
+
+                     if (errTag) {
+                         errTag.focus();
+                     }
+                 }
+             }
+         });
+     }
+
+
+     // For show popup
+     $('.supportBtn').click(function (e) {
+         e.preventDefault();
+         var currSelector = $(this);
+         loadFormData();
+     });
+
+     function loadFormData() {
+         //alert('hi'); return false;
+         var askexpert = $("#askexpert");
+
+         var slug = 'contact-us';
+         var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+         //sendingOtp = 1;
+         $.ajax({
+             url: "https://www.cpaservices.in/ajax_load_form",
+             type: "POST",
+             data: { slug: slug },
+             dataType: "JSON",
+             headers: {
+                 'X-CSRF-TOKEN': _token
+             },
+             cache: false,
+             beforeSend: function () {
+             },
+             success: function (resp) {
+                 if (resp.success) {
+                     //cancelOrderModal.find(".modal-title").html(resp.title);
+                     askexpert.find(".modal-body").html(resp.htmlData);
+
+                     askexpert.modal("show");
+                 }
+             }
+         });
+     }
+
+
+     $(document).on("click", ".askSubmitBtn", function (e) {
+         e.preventDefault();
+
+         var currSel = $(this);
+
+         var popupform = $("#popupform");
+
+         var popupform = $("form[name=popupform]");
+         popupform.find(".form-group").removeClass("has-error");
+         popupform.find(".help-block").remove();
+
+         var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+
+         $.ajax({
+             url: "https://www.cpaservices.in/ajax_save_popup",
+             type: "POST",
+             data: popupform.serialize(),
+             dataType: "JSON",
+             headers: { 'X-CSRF-TOKEN': _token },
+             cache: false,
+             beforeSend: function () {
+                 popupform.find(".form-group").removeClass("has-error");
+                 popupform.find(".help-block").remove();
+             },
+             success: function (resp) {
+                 if (resp.success) {
+                     $("#sccMsg").html('<div class="alert alert-success"> Your Request has been submitted. </div>');
+
+                     document.popupform.reset();
+                     //cancelOrderModal.modal("close");
+                     //window.location.reload();
+                 }
+                 else if (resp.errors) {
+
+                     var errTag;
+                     var countErr = 1;
+
+                     $.each(resp.errors, function (i, val) {
+
+                         popupform.find("[name='" + i + "']").parents(".form-group").addClass("has-error");
+                         popupform.find("[name='" + i + "']").parents(".form-group").append('<p class="help-block">' + val + '</p>');
+
+                         if (countErr == 1) {
+                             errTag = popupform.find("[name='" + i + "']");
+                         }
+                         countErr++;
+
+                     });
+
+                     if (errTag) {
+                         errTag.focus();
+                     }
+                 }
+             }
+         });
+
+     });
+
+</script>
+
+<script type="text/javascript">
+    $('.changeCaptcha').on('click', function (e) {
+        e.preventDefault();
+
+        var captcha = $(".captchImgBox").find('img');
+
+        var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+
+        $.ajax({
+            url: "https://www.cpaservices.in/common/ajax_regenerate_captcha",
+            type: "POST",
+            data: {},
+            dataType: "JSON",
+            headers: {
+                'X-CSRF-TOKEN': _token
+            },
+            cache: false,
+            beforeSend: function () { },
+            success: function (resp) {
+                if (resp.success) {
+                    if (resp.captcha_src) {
+                        captcha.attr('src', resp.captcha_src);
+                    }
+                }
+            }
+        });
+    });
+
+
+    function validate_contactform() {
+        //alert('df'); return false;
+        $('.error_f_name').html('');
+        $('.error_l_name').html('');
+        $('.error_c_email').html('');
+        $('.error_comment').html('');
+        $('.error_phone').html('');
+        var z = true;
+        var first_name = $('#first_name').val();
+        var last_name = $('#last_name').val();
+        var phone = $('#phone').val();
+        var contact_email = $('#contact_email').val();
+        var comment = $('#comment').val();
+        var scode = $('#scode').val();
+
+        //alert(comment); return false;
+
+        if (first_name == "") {
+            $('.first_name').addClass('error_field');
+            $('.error_f_name').html('First Name Required');
+            z = false;
+        }
+        else {
+            if (!/^[a-zA-Z_ ]*$/g.test(first_name)) {
+                $('.first_name').addClass('error_field');
+                $('.error_f_name').html('Only Characters Required!');
+                z = false;
+            }
+
+        }
+        if (last_name == "") {
+            $('.last_name').addClass('error_field');
+            $('.error_l_name').html('Last Name is Required');
+            z = false;
+        }
+        if (contact_email == "") {
+            $('.contact_email').addClass('error_field');
+            $('.error_c_email').html('Email is Required');
+            z = false;
+        }
+        /*else{
+        if(!validateEmail(contact_email)){
+        $('.contact_email').addClass('error_field');
+        $('.error_c_email').html('Invalid Email!');
+        z=false; 
+        }     
+        }
+        */
+        if (comment == "") {
+            $('.comment').addClass('error_field');
+            $('.error_comment').html('comment Required');
+            z = false;
+        }
+
+        if (phone == "") {
+            $('.phone').addClass('error_field');
+            $('.error_phone').html('Phone Required');
+            z = false;
+        }
+
+        if (scode == "") {
+            $('.scode').addClass('error_field');
+            z = false;
+        }
+
+        if (z) {
+            var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+
+            $.ajax({
+                url: "https://www.cpaservices.in/contact",
+                type: "POST",
+                data: { first_name: first_name, last_name: last_name, contact_email: contact_email, comment: comment, phone: phone, scode: scode },
+                dataType: "JSON",
+                headers: {
+                    'X-CSRF-TOKEN': _token
+                },
+                cache: false,
+                beforeSend: function () { },
+                success: function (resp) {
+                    if (resp.success) {
+
+                        //window.location = "https://www.cpaservices.in/thank-you";
+                        $('.msg').addClass('thank-you');
+                        $('.msg').html(resp.message);
+                        document.contactForm.reset();
+
+                    }
+                    if (resp.errors && resp.errors.scode) {
+                        $('.error_scode').html(resp.errors.scode);
+
+                    }
+                }
+            });
+        }
+
+        return false;
+
+    }
+
+
+  </script>
+
+
+
+
+<script type="text/javascript">
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('header').addClass("sticky");
+        }
+        else {
+            $('header').removeClass("sticky");
+        }
+    });
+
+    $(document).ready(function () {
+        $("body").click(function () {
+            $('.navicon').removeClass('active');
+            $('.topmenu').removeClass('showmenu');
+        });
+        $(".navicon").click(function (e) {
+            e.stopPropagation();
+            $(this).toggleClass('active');
+            $(".topmenu").toggleClass('showmenu');
+        });
+        $(".topmenu").click(function (e) {
+            e.stopPropagation();
+        });
+        $(".topmenu > ul > li > a").each(function () {
+            if ($(this).parent().children("ul").length) {
+                $(this).parent('li').addClass("sub-links");
+            }
+        });
+
+        $(".sub-links > a").each(function () {
+            if ($(window).width() < 1023) {
+                $(this).before('<span class="plusicon"></span>');
+            }
+        });
+        $('.plusicon').click(function (e) {
+            e.stopPropagation();
+            if ($(window).width() < 1023) {
+                var $el = $(this).parent().find("ul"),
+      $parPlus = $(this).parent().find(".plusicon");
+
+                $parPlus.stop(true, true).toggleClass("minus_icon");
+                $(this).next().next().slideToggle();
+            }
+        });
+
+    });
+    $(".teamflip").click(function () {
+        $(this).toggleClass("flipped");
+    });
+    $(window).on("load", function () {
+        var urlHash = window.location.href.split("#")[1];
+        $('html,body').animate({
+            scrollTop: $('#' + urlHash).offset().top - 120
+        }, 600);
+    })
+</script>
+
+<script src="public/assets/themes/theme-1/js/aos.js"></script>
+ <script>
+     AOS.init({
+         //easing: 'ease-out-back',
+         //duration: 1000
+     });
+    </script>
+ 
+<script type="text/javascript" src="public/assets/themes/theme-1/js/lightgallery.js"></script> 
+<script type="text/javascript" src="public/assets/themes/theme-1/js/owl.carousel.min.js"></script> 
+
+<script src="public/assets/themes/theme-1/fullcalendar/dist/lib/moment.min.js"></script>
+<script src="public/assets/themes/theme-1/fullcalendar/dist/fullcalendar.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+    var enabledDate_ar = ["2020-01-07","2020-01-15","2020-01-31","2020-02-07","2020-02-15","2020-03-07","2020-03-15","2020-04-15","2020-04-30","2020-05-07","2020-05-15","2020-05-31","2020-06-07","2020-06-15","2020-07-07","2020-07-15","2020-07-31","2020-08-07","2020-08-15","2020-09-07","2020-09-15","2020-09-30","2020-10-07","2020-10-15","2020-10-31","2020-11-07","2020-11-15","2020-12-07","2020-12-15","2020-12-31"];
+    var calendar = $('#calendar').fullCalendar({
+        //defaultView: 'month',
+        default: true,
+        editable: true,
+        header: {
+          left:   'title',
+          center: '',
+          right:  'prev,next'
+        },        
+        events: [],
+        displayEventTime: false,
+        eventRender: function (event, element, view) {
+            if (event.allDay === 'true') {
+                event.allDay = true;
+            } else {
+                event.allDay = false;
+            }
+        },
+        selectable: false,
+        selectHelper: true,
+        viewRender: function(currentView)
+        {
+      
+          var select_date = $('#calendar').fullCalendar('getDate');
+          select_date=new Date(select_date);
+          
+          var sel_d    = select_date.getDate();  
+          var sel_m    = select_date.getMonth();
+          var sel_y    = select_date.getFullYear();
+         
+          var curr_date =new Date(); 
+          var curr_d    = curr_date.getDate();
+          var curr_m    = curr_date.getMonth();
+          var curr_y    = curr_date.getFullYear();
+          
+                   
+          
+          var minDate = moment(),
+          maxDate = moment().add(2,'weeks');
+
+          // Past
+          /*if (minDate >= currentView.start && minDate <= currentView.end) {
+            $(".fc-prev-button").prop('disabled', true); 
+            $(".fc-prev-button").addClass('fc-state-disabled'); 
+          }
+          else {
+            $(".fc-prev-button").removeClass('fc-state-disabled'); 
+            $(".fc-prev-button").prop('disabled', false); 
+          }*/
+          
+        },
+        dayRender: function (date, cell) {
+          var all_date=date.format('YYYY-MM-DD'); // Y-m-d
+          //console.log('Date:'+all_date);
+
+          if($.inArray(all_date,enabledDate_ar)!=-1)
+          {          
+            cell.css("background-color", "#c0d4e9"); 
+          }
+      },
+        dayClick: function(date) 
+        {
+         
+           var sel_date=date.format('YYYY-MM-DD'); // Y-m-d
+           if($.inArray(sel_date,enabledDate_ar)!=-1)
+           {
+
+           // alert('Date: '+sel_date);
+
+              //$('#odates').val(sel_date); //set date in datepicker
+
+              //on changes date in datepicker load relative traveller data
+              load_taxData(sel_date);
+
+                 //For scroll up
+                // $('html, body').animate({
+               //   scrollTop: $("#odates").offset().top
+              //}, 2000);   
+           }
+        },
+        /*select: function (start, end, allDay) {
+            var title = prompt('Event Title:');
+
+            if (title) {
+                var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
+                var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
+                calendar.fullCalendar('renderEvent',
+                        {
+                            title: title,
+                            start: start,
+                            end: end,
+                            allDay: allDay
+                        },
+                true
+                        );
+            }
+            calendar.fullCalendar('unselect');
+        },*/
+        eventClick: function (event) {
+          displayMessage(event);
+        }
+        
+        
+
+    });
+});
+  
+
+function load_taxData(date='') {
+    //console.log(date);
+
+    if(date!='')
+    {
+      var _token = '0EgnVUnhhxN8iRvDiqxEgQM5sGGQKFOb9AqzCkhF';
+
+      $.ajax( {
+        url: "https://www.cpaservices.in/get-tax",
+        type: "POST",
+        data: {selDate:date},
+        dataType: "JSON",
+        headers: {
+          'X-CSRF-TOKEN': _token
+        },
+        cache: false,
+        success: function ( resp ) {
+
+          if(resp.success == 1)
+          {
+            //console.log(resp.html);        
+
+            var duDate = formatDate(date);
+
+            $('#taxModalLong #taxModalLongTitle').html(duDate);
+            $('#taxModalLong .modal-body').html(resp.html);
+            $('#taxModalBtn').trigger('click');
+
+          }
+
+
+        }
+      } );
+
+    }
+
+    return true;
+
+      
+
+}
+
+function formatDate(date) {
+  var start_date = moment(date).format('MMMM DD, YYYY');//date;
+  return start_date;
+}
+
+function displayMessage(message) {
+  
+  var start_date = $.fullCalendar.formatDate(message.start, "DD-MM-Y");
+    $('#taxModalLong #taxModalLongTitle').html('<strong>Form no: </strong>'+message.form_no);
+    $('#taxModalLong .modal-body').html('<p><strong>Statutory dues: </strong>'+message.title+' </p><p> <strong>Due Date : </strong>'+start_date+'</p>');
+    $('#taxModalBtn').trigger('click');
+      
+      //$(".response").html("<div class='success'>"+message+"</div>");
+      //setInterval(function() { $(".success").fadeOut(); }, 1000);
+}
+
+$(document).ready(function(){
+    $('#lightgallery').lightGallery();
+});
+</script>
+
+
+<script>
+   $('.slider').owlCarousel({
+      loop: true,
+      autoplay:true,
+      nav: false,
+      dots: true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      slideSpeed : 5000,
+      paginationSpeed : 500,
+      items:1,
+      responsive: {
+        0: {
+          items: 1,
+        },
+         600:{
+            items:1,
+        },
+        1000:{
+            items:1,
+        },
+      }
+  });
+   $('#clist').owlCarousel({
+    margin:60,
+      loop: true,
+      autoplay:true,
+      autoWidth:true,
+      nav: true,
+      dots: false,
+      slideSpeed : 4000,
+      paginationSpeed : 800,
+       navText: [
+          "<i class='icon clarrow'></i>",
+          "<i class='icon crarrow'></i>"
+      ],
+      items:1,
+      responsive: {
+        0: {
+           margin:20,
+          items: 1,
+        },
+         600:{
+           margin:20,
+            items:3,
+        },
+        1000:{
+            items:4,
+        },
+      }
+  });
+  $(window).scroll(function() {
+      var a = 0;
+      var cTop = $('#habout').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > cTop) {
+        $('.counter').each(function() {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+              countNum: countTo
+            },
+            {
+              duration: 5000,
+              easing: 'swing',
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                $this.text(this.countNum);
+              }
+            });
+        });
+        a = 1;
+      }
+      var b = 0;
+      var grTop = $('#gr').offset().top - window.innerHeight;
+      if (b == 0 && $(window).scrollTop() > grTop) {
+        $('.gr-counter').each(function() {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+              countNum: countTo
+            },
+            {
+              duration: 2000,
+              easing: 'swing',
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                $this.text(this.countNum);
+              }
+            });
+        });
+        b = 1;
+      }
+  });
+   $(function() {
+      $( "#datepicker-2" ).datepicker();
+   });
+   // Inline Popup
+  jQuery('.inline-popup').magnificPopup({
+    type:'inline',
+    midClick: true 
+  });
+
+  $(".serv-action").on("click", function(){
+    $dataTarget = $(this).data("target");
+    $(".serv-action").removeClass("active");
+    $(".service-toogle-data").removeClass("active");
+    $(this).addClass("active");
+    $("#" + $dataTarget).addClass("active");
+    
+  })
+</script>
+
+
+
+</html>

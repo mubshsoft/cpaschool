@@ -1,0 +1,14 @@
+
+select *from student order by stid desc
+select *from examset
+select *from StudentActiveExam where examid=471
+
+select *from QUES_ANSWERS where examid=471
+delete from QUES_ANSWERS where ansid=59522
+
+select * from StudentPaperMarks order by pid desc
+
+Select distinct ExamId from StudentSupplyExamAssign where stid=582
+select *from BatchClosure where userid=582
+
+select distinct(batchcode),studentRegbatch.bid,studentRegbatch.Courseid from studentRegbatch Inner join batch on studentRegbatch.bid=batch.bid where studentRegbatch.courseid=17

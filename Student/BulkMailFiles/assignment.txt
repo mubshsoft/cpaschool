@@ -1,0 +1,27 @@
+-- from admin panel
+--for Add assignment, devide in section, add instruction, add question with option
+select *from AssignmentSet where asgnid =13 order by asgnid desc
+select * from Assignment_category where asgnid =13
+select *from AssignmentStudentInstruction  where asgnid =13
+select *from AssignmentSectionQue where asgnid=13
+select *from AssignmentQUESTIONS where asgnid=13
+select *from Assignmentques_options where questionid>20
+select *from AssignmentSubQUESTIONS
+
+--For Assign assignment
+select *from ActivateAssignment where asgnid=13
+select *from StudentActiveAssignment where asgnid=13
+
+
+--For submiting offline assignment
+select *from AssignmentQUES_ANSWERS
+select *from AssignmentManualAnswers
+
+select *from AssignmentSubQUES_ANSWERS
+
+--For paper to faculty
+select *from FacultyRegistration
+select *from FacultyActiveAssignment
+
+
+

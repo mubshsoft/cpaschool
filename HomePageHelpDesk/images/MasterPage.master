@@ -1,0 +1,290 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+
+    <script type="text/javascript" src="stmenu.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/sl-slide.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+    
+      
+<style>
+.grey-head1
+{
+    position: relative;
+    font-size: 15px;
+    font-family: calibri;
+    color: #303393;
+    letter-spacing: 0;
+    font-weight:bold;
+}
+</style> 
+</head>
+<body>
+    
+    <!--Header-->
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                
+               <a id="logo" class="pull-left" href="http://www.fmsflearningsystems.org/"></a>
+               <div class="green-head pull-left">LEARNING <span style="color: #828186;">SYSTEMS</span><br />
+               <span class="grey-head hidden-phone">an online platform for FMSF training programmes</span>
+               </div>
+               
+                <div class="green-head pull-right" style="text-align:right; padding-top: 10px;">
+                <a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+               <a href="http://www.cpaservices.in"><img src="Images/cpa_logo.png" alt="cpaservices"/></a>
+               <br />
+               <span class="grey-head1 hidden-phone pull-right">SCHOOL OF LEARNING</span>
+               
+               </div>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li id="homepage"><a href="../Default.aspx">Home</a></li>
+                        <li id="aboutuspage"><a href="../aboutus.aspx">About Us</a></li>
+                        <li id="coursepage" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses Offered <i class="icon-angle-down"></i></a>
+                             <ul class="dropdown-menu">
+                                <asp:Repeater ID="rptrSubMeu" runat="server">
+                                    <ItemTemplate>
+                                        <li style="font-size:14px"><a href='../CourseDetailsInfo.aspx?CID=<%#Eval("CourseId")%>'><strong><%#Eval("CourseName")%></strong></a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                              </ul>
+                        </li>
+                        <li id="downloadpage" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Downloads <i class="icon-angle-down"></i></a>
+                        <table width="100%" class="dropdown-menu" style="padding: 5px; min-width:340px">
+                        <tbody style="background-color: #f1f1f1;font-size: 14px;"><tr>
+                        <th style="width: 200px;background-color: #3598DB;color: #fff;padding: 5px 0 5px 10px;text-align:left">DFMA</th>
+                        <th style="width: 200px;background-color: #3598DB;color: #fff;padding: 5px 0 5px 10px;text-align:left">NPO</th>
+                        <th style="width: 200px;background-color: #3598DB;color: #fff;padding: 5px 0 5px 10px; text-align:left">PME</th> 
+                        </tr>
+                         <tr>
+                        <td style="padding: 10px;"><a href="DownloadPDF.aspx?HelpDesk=2&cid=1">Brochure</a></td>
+                        <td style="background-color: #f9f9f9;padding: 10px;"><a href="/DownloadPDF.aspx?HelpDesk=2&cid=2">Brochure</a></td>
+                         <td style="padding: 10px;"><a href="DownloadPDF.aspx?HelpDesk=2&cid=14">Brochure</a></td> 
+                        </tr>
+                        <tr>
+                        <td style="padding: 10px;"><a href="/DownloadPDF.aspx?HelpDesk=1&cid=1">FAQs</a></td>
+                        <td style="background-color: #f9f9f9;padding: 10px;"><a href="/DownloadPDF.aspx?HelpDesk=1&cid=2">FAQs</a></td>
+                         <td style="padding: 10px;"><a href="DownloadPDF.aspx?HelpDesk=1&cid=14">FAQs</a></td> 
+                        </tr>
+                        <tr>
+                        <td style="padding: 10px;"><a href="/DownloadPDF.aspx?HelpDesk=3&cid=1">Calendar</a></td>
+                        <td style="background-color: #f9f9f9; padding: 10px;"><a href="/DownloadPDF.aspx?HelpDesk=3&cid=2">Calendar</a></td>
+                         <td style="padding: 10px;"><a href="DownloadPDF.aspx?HelpDesk=3&cid=14">Calendar</a></td> 
+                        </tr>
+                        </tbody></table>
+                  </li>
+                        <li id="kd" class="dropdown" style="display:none ">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="aKd" runat="server" >Knowledge Center <i class="icon-angle-down"></i></a>
+                             <ul class="dropdown-menu">
+                                <asp:Repeater ID="rptKd" runat="server">
+                                    <ItemTemplate>
+                                        <li style="font-size:14px;"><a href='../KnowledgeCenterDetails.aspx?SubjectType=<%#Eval("SubjectType")%>'><strong><%#Eval("SubjectType")%></strong></a></li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                              </ul>
+                        </li>
+                        <li id="registrationpage"><a href="../registration1.ASPX">Register</a></li> 
+                        <li id="alumnipage"><a href="#">Alumni Corner </a></li>
+                        <li id="loginpage" class="login">
+                            <a href="../Login.aspx"><i class="icon-lock"></i></a>
+                        </li>
+                    </ul>        
+                </div><!--/.nav-collapse -->
+            
+        </div>
+    </header>
+    <!-- /header -->
+ 
+    
+        <%--<table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                
+                    <td height="27" colspan="3" align="left" valign="bottom" style="background-color: #13a1d3">
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticEnableDefaultPopOutImage="false"
+                            DynamicEnableDefaultPopOutImage="false" DynamicMenuItemStyle-CssClass="dynamicItemNew"
+                            DynamicMenuStyle-CssClass="IE8Fix" DynamicHoverStyle-CssClass="hoverdynamicItemNew"
+                            StaticHoverStyle-CssClass="menuHover" StaticMenuItemStyle-CssClass="menuItem"
+                            DynamicHorizontalOffset="2" DynamicVerticalOffset="3" BackColor="#13a1d3" DynamicMenuStyle-BackColor="#13a1d3"
+                            DynamicMenuStyle-BorderColor="#000000" DynamicMenuStyle-BorderWidth="1px" DynamicMenuStyle-BorderStyle="Groove"
+                            Width="712px" Height="27px">
+                        <StaticItemTemplate>
+                            <b>
+                                <%# Eval("Text") %></b>
+                        </StaticItemTemplate>
+                        <DynamicItemTemplate>
+                            <%# Eval("Text") %>
+                        </DynamicItemTemplate>
+                        
+                    </asp:Menu>
+                </td>
+                
+            </tr>
+
+        </table>--%>
+
+        <script src="../js/vendor/jquery-1.9.1.min.js"></script>
+<script src="../js/vendor/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+<!-- Required javascript files for Slider -->
+<script src="../js/jquery.ba-cond.min.js"></script>
+
+<asp:ContentPlaceHolder id="Head" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+        <!--Bottom-->
+<section id="bottom" class="main">
+    <!--Container-->
+    <div class="container">
+
+        <!--row-fluids-->
+        <div class="row-fluid">
+
+            <!--Contact Form-->
+            <div class="span4 mob-margin">
+                <h4>ADDRESS</h4>
+                <ul class="unstyled address">
+                    <li>
+                        <i class="icon-home"></i><strong>FINANCIAL MANAGEMENT SERVICE FOUNDATION<br />
+                        CPA Services Pvt. Ltd<br />
+Accountability House
+A-5, Sector-26
+Noida - 201301<br />
+</strong>
+                    </li>
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <strong>Email: </strong> <a href="mailto:Coordinator@fmsflearningsystems.org">Coordinator@fmsflearningsystems.org</a>
+                    </li>
+                    <li>
+                        <i class="icon-globe"></i>
+                        <strong>Website:</strong> <a href="http://www.fmsflearningsystems.org/">www.fmsflearningsystems.org</a>
+                    </li>
+                    <li>
+                        <i class="icon-phone"></i>
+                        <strong>Phone:</strong> + 91-120-4773200 
+                    </li>
+                </ul>
+            </div>
+            <!--End Contact Form-->
+
+            <!--Important Links-->
+            <div class="span8">
+                <h4>OUR OTHER WEBSITES</h4>
+                <div class="row-fluid" style="display: inline-flex;">
+                    <div class="span2" align="center"><a href="http://www.Fmsfindia.org" target="_blank"><img src="Images/fmsf.png" class="image1" /></a><div class="websites-text"><a href="http://www.Fmsfindia.org">FMSF India</a></div></div> 
+                    <div class="span2" align="center"><a href="http://www.Incometaxforngos.org" target="_blank"><img src="Images/tax.png" class="image1" /></a><div class="websites-text"><a href="http://www.Incometaxforngos.org">Income Tax</a></div></div>
+                    <div class="span2" align="center"><a href="http://www.Legalissuesforngos.org" target="_blank"><img src="Images/legal.png" class="image1" /></a><div class="websites-text"><a href="http://www.Legalissuesforngos.org">Legal Issues</a></div></div>
+                    <div class="span2" align="center"><a href="http://www.Socialaccountability.net" target="_blank"><img src="Images/social.png" class="image1" /></a><div class="websites-text"><a href="http://www.Socialaccountability.net">Social Accountability</a></div></div>
+                    <div class="span2" align="center"><a href="http://www.Fcraforngos.org" target="_blank"><img src="Images/ngo.png" class="image1" /></a><div class="websites-text"><a href="http://www.Fcraforngos.org">FCRA for NGO's</a></div></div> 
+                    <div class="span2" align="center"><a href="http://www.cpaservices.in" target="_blank"><img src="Images/ngo.png" class="image1" /></a><div class="websites-text"><a href="http://www.cpaservices.in">CPA</a></div></div>
+            </div>
+            </div>
+            <!--Important Links-->
+
+          
+
+    </div>
+    <!--/row-fluid-->
+</div>
+<!--/container-->
+
+</section>
+<!--/bottom-->
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span5 cp">
+                &copy; 2007 <a target="_blank" href="http://fmsflearningsystems.org/" title="FMSF">FMSF</a>. All Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+            </div>
+            <!--/Copyright-->
+
+            <div class="span6">
+                <ul class="social pull-right">
+                    <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/learningsystems"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                    <li><a href="#"><i class="icon-google-plus"></i></a></li>                       
+                    <li><a href="#"><i class="icon-youtube"></i></a></li>
+                    <li><a href="#"><i class="icon-tumblr"></i></a></li>                        
+                    <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                    <li><a href="#"><i class="icon-rss"></i></a></li>
+                    <li><a href="#"><i class="icon-github-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>                   
+                </ul>
+            </div>
+
+            <div class="span1">
+                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
+            </div>
+            <!--/Goto Top-->
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+
+
+
+
+<!--  Login form -->
+<div class="modal hide fade in" id="loginForm" aria-hidden="false">
+    <div class="modal-header">
+        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
+        <h4>Login Form</h4>
+    </div>
+    <!--Modal Body-->
+    <div class="modal-body">
+        <form class="form-inline" action="index.html" method="post" id="form-login">
+            <input type="text" class="input-small" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password">
+            <label class="checkbox">
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <a href="#">Forgot your password?</a>
+    </div>
+    <!--/Modal Body-->
+</div>
+<!--  /Login form -->
+
+    
+</body>
+</html>

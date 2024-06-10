@@ -1,0 +1,394 @@
+/*
+	Grid Cascading Style Sheet
+	Created By: Ashwini Kumar Solanki - solankiashwini@gmail.com
+	Company: FCS Software Solutions Limited
+	Created for Client: WebPos
+
+	Licensed under the Creative Commons Attribution 2.5 License - http://creativecommons.org/licenses/by/2.5/
+	
+	Table of Contents
+	-----------------
+	Grid Cascading Style Sheet
+	
+*/
+
+
+/* START: This Style is the enhansed version of "Ultra Grid Style--Customer Listing" */
+
+/* When styling fonts with CSS you may be doing this:
+		font-size: 1em;
+		line-height: 1.5em;
+		font-weight: bold;
+		font-style: italic;
+		font-variant: small-caps;
+		font-family: verdana,serif;
+
+There's no need though as you can use this CSS shorthand property:
+
+font: 1em/1.5em bold italic small-caps verdana,serif;
+
+Much better! Just a couple of words of warning: This CSS shorthand version will only work if you're 
+specifying both the font-size and the font-family. 
+Also, if you don't specify the font-weight, font-style, or font-varient then these values will 
+automatically default to a value of normal, so do bear this in mind too.*/
+
+
+
+/* To Highlight Row Grid
+----------------------------------------*/
+.gridHighlight 
+{
+	background-color:#dff2f9; font-size:10px; font-family:Verdana, Arial, Tahoma; font-weight:normal;
+	
+}
+
+
+		
+/* Ultra Grid Style--Customer Listing
+-------------------------------------------------------------------------------*/
+
+.GridUltra	
+{
+	border:1px solid #e0e0e0; width:930px; 
+	text-align:left; 
+	font: 10px normal #000000 Verdana Arial Tahoma;
+	/*color:#000000; font-family:Verdana,Arial,Tahoma; font-size:11px;*/
+}
+
+.GridUltra-header
+{
+	background:url(../images/custImg/pymnt-grid-header-2.jpg) repeat-x; 
+	height:25px; 
+	font: 10px bold #282828 Verdana Arial Tahoma;
+	/*color:#000000; font-weight:bold; font-family:Verdana,Arial,Tahoma; font-size:11px;*/
+}
+.GridUltra-header a	
+{
+	/*height:25px;*/ text-decoration:none;
+	font: 10px bold #282828 Verdana Arial Tahoma;
+	/*color:#444444; font-weight:bold; font-family:Verdana,Arial,Tahoma; font-size:11px;*/
+}
+
+.GridUltra-altrow	
+{
+	background-color:#f5f5f5; height:25px; border:1px solid #e0e0e0;
+	font: 10px normal #282828 Verdana Arial Tahoma;
+	/*color:#444444; font-family:Verdana,Arial,Tahoma; font-size:11px; 	*/
+}
+.GridUltra-altrow a:link, a:active, a:visited
+{
+	/*height:15px;*/ font-family: Verdana, Arial, Tahoma; font-size:10px; font-weight:normal; color:#282828;  text-decoration:none;
+	/*color:#444444; font-size:10px; font-family:Verdana,Arial,Tahoma;*/
+}
+.GridUltra-altrow a:hover
+{
+	/*height:15px;*/ font-family: Verdana, Arial, Tahoma; font-size:10px; font-weight:normal; color:#0d48d8/*258706e70101*/; text-decoration:underline;
+	/*color:#444444; font-size:10px; font-family:Verdana,Arial,Tahoma;*/
+}
+
+.GridUltra-row		
+{
+	background-color:#fbfbfb; height:25px; border:1px solid #e0e0e0;
+	font: 10px normal #282828 Verdana Arial Tahoma;
+	/*color:#444444; font-size:11px; font-family:Verdana,Arial,Tahoma; */
+}
+.GridUltra-row a:link, a:active, a:visited		
+{
+	 font-family: Verdana, Arial, Tahoma; font-size:10px; font-weight:normal; color:#282828;  text-decoration:none;
+	/*background-color:#ffffff; height:25px; border:1px solid #e0e0e0;
+	color:#444444; font-size:11px; font-family:Verdana,Arial,Tahoma; */
+}
+.GridUltra-row a:hover
+{
+	/*height:15px;*/ font-family: Verdana, Arial, Tahoma; font-size:10px; font-weight:normal; color:#0d48d8/*258706e70101*/; text-decoration:underline;
+	/*color:#444444; font-size:10px; font-family:Verdana,Arial,Tahoma;*/
+}
+
+.GridUltra-pager		
+{
+	/*background:url(../images/custImg/pymnt-grid-header-2.jpg) repeat-x;*/ width:100%; height:30px;
+	background-color:# 
+	font: 10px normal #282828 Verdana Arial Tahoma;
+	text-align:right; padding-right:10px; border:1px solid #e0e0e0;
+	/*color:#000000; font-family:Verdana,Arial,Tahoma; font-size:11px; */
+}
+.GridUltra-pager a:hover	
+{
+	height:30px; text-decoration:underline; 
+	color:#282828; font-family:Verdana,Arial,Tahoma; font-size:10px;
+}	
+
+/* END*/
+
+.GridUltra-overflow 
+{
+	overflow-y:scroll; overflow-x:hidden; height:600px; width:100%;
+}
+
+.Grid-Footer		
+{
+	background:url(../images/custImg/pymnt-grid-header-2.jpg) repeat-x; width:100%; height:24px; 
+	font: 10px normal #282828 Verdana Arial Tahoma;
+	text-align:right; border:1px solid #e0e0e0;
+	/*color:#000000; font-family:Verdana,Arial,Tahoma; font-size:11px; */
+}
+
+
+
+/* Grid Style-- Company Setup  
+-------------------------------------------------------------------------------*/
+
+.grid-CstPymtAcpt	
+{
+	border:1px solid #e3e3e3; width:419px; 
+	text-align:left; font: 10px normal #282828 Verdana Arial Tahoma;
+	/*font-size:11px; color:#000000;*/
+}
+
+.grid-altrow-CstPymtAcpt	{background-color:#f5f5f5; font: 10px normal #282828 Verdana Arial Tahoma; height:22px;}
+.grid-altrow-CstPymtAcpt a	{color:#282828;}
+
+.grid-row-CstPymtAcpt		{background-color:#fbfbfb; font: 10px normal #282828 Verdana Arial Tahoma; height:22px;}
+.grid-row-CstPymtAcpt a		{color:#282828; text-decoration:underline;}
+
+.grid-pager-CstPymtAcpt		{background:url(../images/custImg/pymnt-grid-footer.jpg) no-repeat; width:409px; height:21px; padding-right:10px; padding-top:3px; font:10px normal #282828 Verdana Arial Tahoma; text-align:right;}
+.grid-pager-CstPymtAcpt	a	{font:10px normal #282828 Verdana Arial Tahoma; text-decoration:underline;}
+
+.grid-header-CstPymtAcpt	{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; font:10px bold #282828 Verdana Arial Tahoma;}
+.grid-header-CstPymtAcpt a	{font:10px bold #282828 Verdana Arial Tahoma; text-decoration:none; font-weight:bold;}
+
+
+
+/* Grid Style-- Customer Message  
+-------------------------------------------------------------------------------*/
+
+.grid-Cstmesg	{border:1px solid #e3e3e3; width:338px; text-align:left;font-size:10px; color:#282828;}
+
+.grid-altrow-Cstmesg	{background-color:#ffffff; color:#282828; font-size:10px; height:15px;}
+.grid-altrow-Cstmesg a	{color:#282828; font-size:10px;}
+
+.grid-row-Cstmesg		{background-color:#ffffff; color:#282828; font-size:10px; height:15px;}
+.grid-row-Cstmesg a		{color:#282828; text-decoration:underline;}
+
+.grid-pager-Cstmesg		{background:url(../images/custImg/pymnt-grid-footer.jpg) no-repeat; width:407px; height:24px; color:#000000; font-size:10px; text-align:right; padding-right:10px;}
+.grid-pager-Cstmesg	a	{color:#282828; text-decoration:underline;}
+
+.grid-header-Cstmesg	{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; color:#282828; font-size:10px; font-weight:bold;}
+.grid-header-Cstmesg a	{color:#c11279;font-size:10px; text-decoration:none; font-weight:bold;}
+
+
+
+/* Grid Style--Cust BalPerCust  
+-------------------------------------------------------------------------------*/
+
+.grid-BalPCust	{border:1px solid #e0e0e0; width:98%; text-align:left; font-size:10px; color:#282828; font-family:Verdana,Arial,Tahoma;}
+
+.grid-altrow-BalPCust	{background-color:#f5f5f5; color:#282828; font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;}
+.grid-altrow-BalPCust a	{color:#282828; /*font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;*/}
+
+.grid-row-BalPCust		{background-color:#fbfbfb; color:#282828; font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;}
+.grid-row-BalPCust a		{color:#282828; text-decoration:underline;/* font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;*/}
+
+.grid-pager-BalPCust		{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; width:100%; height:24px; color:#000000; font-family:Verdana,Arial,Tahoma; font-size:10px; text-align:right; padding-right:10px;}
+.grid-pager-BalPCust	a	{color:#282828; text-decoration:underline;/* font-family:Verdana,Arial,Tahoma; height:24px; font-size:10px;*/}
+
+.grid-header-BalPCust	{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; color:#282828; font-family:Verdana,Arial,Tahoma; font-size:10px; font-weight:bold;}
+.grid-header-BalPCust a	{color:#282828;font-size:10px; text-decoration:none; font-weight:bold;/*height:22px;  font-family:Verdana,Arial,Tahoma;*/}
+
+
+/* Grid Style--Cust ActDtl  
+-------------------------------------------*/
+.grid-CustActDtl	{border:1px solid #e0e0e0; width:450px; text-align:left; font-size:10px; color:#282828; font-family:Verdana,Arial,Tahoma;}
+
+.grid-altrow-CustActDtl	{background-color:#f5f5f5; color:#282828; font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;}
+.grid-altrow-CustActDtl a	{color:#282828; height:15px; /*font-family:Verdana,Arial,Tahoma; font-size:10px;*/}
+
+.grid-row-CustActDtl		{background-color:#fbfbfb; color:#282828; font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;}
+.grid-row-CustActDtl a		{color:#282828; text-decoration:underline;/* font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;*/}
+
+.grid-pager-CustActDtl		{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; width:100%; height:24px; color:#282828; font-family:Verdana,Arial,Tahoma; font-size:10px; text-align:right; padding-right:10px;}
+.grid-pager-CustActDtl	a	{color:#282828; text-decoration:underline;/* font-family:Verdana,Arial,Tahoma; height:24px; font-size:10px;*/}
+
+.grid-header-CustActDtl	{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; color:#282828; font-family:Verdana,Arial,Tahoma; font-size:10px; font-weight:bold;}
+.grid-header-CustActDtl a	{color:#282828; text-decoration:none;font-weight:bold; /*font-size:11px; height:22px;  font-family:Verdana,Arial,Tahoma;*/}
+
+
+
+/* Grid Style--Reports - Employee Information  
+-------------------------------------------------------------------------------*/
+
+.grid-RpEmpInfo	{border:1px solid #e0e0e0; width:98%; text-align:left; font-size:10px; color:#282828; font-family:Verdana,Arial,Tahoma;}
+
+.grid-altrow-RpEmpInfo	{background-color:#f5f5f5; color:#282828; font-size:10px; height:55px; font-family:Verdana,Arial,Tahoma;}
+.grid-altrow-RpEmpInfo a	{color:#282828; /*font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;*/}
+
+.grid-row-RpEmpInfo		{background-color:#fbfbfb; color:#282828; font-size:10px; height:55px; font-family:Verdana,Arial,Tahoma;}
+.grid-row-RpEmpInfo a		{color:#282828; text-decoration:underline;/* font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;*/}
+
+.grid-pager-RpEmpInfo		{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; width:100%; height:24px; color:#000000; font-family:Verdana,Arial,Tahoma; font-size:10px; text-align:right; padding-right:10px;}
+.grid-pager-RpEmpInfo	a	{color:#282828; text-decoration:underline;/* font-family:Verdana,Arial,Tahoma; height:24px; font-size:10px;*/}
+
+.grid-header-RpEmpInfo	{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; color:#282828; font-family:Verdana,Arial,Tahoma; font-size:10px; font-weight:bold;}
+.grid-header-RpEmpInfo a	{color:#282828;font-size:10px; text-decoration:none; font-weight:bold;/*height:22px;  font-family:Verdana,Arial,Tahoma;*/}
+
+
+
+/* Grid Style--Emp AproachingOvertime  
+-------------------------------------------------------------------------------*/
+
+.grid-ApOt	{border:1px solid #e0e0e0; width:98%; text-align:left; font-size:10px; color:#282828; font-family:Verdana,Arial,Tahoma;}
+
+.grid-altrow-ApOt	{background-color:#f5f5f5; color:#282828; font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;}
+.grid-altrow-ApOt a	{color:#282828; /*font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;*/}
+
+.grid-row-ApOt		{background-color:#fbfbfb; color:#282828; font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;}
+.grid-row-ApOt a		{color:#282828; text-decoration:underline;/* font-size:10px; height:22px; font-family:Verdana,Arial,Tahoma;*/}
+
+.grid-pager-ApOt		{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; width:100%; height:24px; color:#000000; font-family:Verdana,Arial,Tahoma; font-size:10px; text-align:right; padding-right:10px;}
+.grid-pager-ApOt	a	{color:#282828; text-decoration:underline;/* font-family:Verdana,Arial,Tahoma; height:24px; font-size:10px;*/}
+
+.grid-header-ApOt	{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; color:#282828; font-family:Verdana,Arial,Tahoma; font-size:10px; font-weight:bold;}
+.grid-header-ApOt a	{color:#282828;font-size:10px; text-decoration:none; font-weight:bold;/*height:22px;  font-family:Verdana,Arial,Tahoma;*/}
+
+
+
+
+
+
+
+/* Grid Style  
+-------------------------------------------*/
+
+.grid	{border:1px solid #f8c5ec; width:959px; text-align:left;font-size:10px; color:#000000;}
+
+.grid-header	{background-color:#f9e8f5; height:25px; color:#c11279; font-size:10px; font-weight:bold;}
+.grid-header a	{background-color:#6a6869; height:20px; color:#c11279;font-size:10px; text-decoration:none;}
+
+.grid-altrow	{background-color:#eeeeee; color:#000000; font-size:10px; height:20px;}
+.grid-altrow a	{color:#000000; font-size:10px;}
+
+.grid-row		{background-color:#ffffff; color:#000000; font-size:10px; height:20px;}
+.grid-row a		{color:#000000; text-decoration:underline;}
+
+.grid-pager		{background-color:#6a6869; color:#000000; font-size:10px; text-align:right;}
+.grid-pager	a	{color:#000000; text-decoration:underline;}
+
+
+
+
+
+
+
+
+/* Grid Style--Overtime Message  
+-------------------------------------------*/
+.grid-Overtime	{border:1px solid #e0e0e0; width:100%; text-align:left;font-size:12px; color:#000000; font-family:Verdana,Arial,Tahoma;}
+
+.grid-altrow-Overtime	{background-color:#eeeeee; color:#282828; font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;}
+.grid-altrow-Overtime a	{color:#0084ff; font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;}
+
+.grid-row-Overtime		{background-color:#ffffff; color:#282828; font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;}
+.grid-row-Overtime a		{color:#0084ff; text-decoration:underline; font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;}
+
+.grid-pager-Overtime		{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; width:100%; height:24px; color:#000000; font-family:Verdana,Arial,Tahoma; font-size:10px; text-align:right; padding-right:10px;}
+.grid-pager-Overtime	a	{color:#000000; text-decoration:underline; font-family:Verdana,Arial,Tahoma; height:24px; font-size:10px;}
+
+.grid-header-Overtime	{background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; color:#000000; font-family:Verdana,Arial,Tahoma; font-size:10px; font-weight:bold;}
+.grid-header-Overtime a	{color:#282828;font-size:10px; text-decoration:none; height:22px; font-weight:bold; font-family:Verdana,Arial,Tahoma;}
+
+
+
+/* Ultra Grid Style--Customer Listing
+-------------------------------------------*/
+.ultraGrid	{border:1px solid #e0e0e0; background-color:#eeeeee; text-align:left; font-size:10px; color:#000000; font-family:Verdana,Arial,Tahoma;}
+.ultraGrid	a{border:1px solid #e0e0e0;background-color:#eeeeee; text-align:left; font-size:10px; color:#000000; font-family:Verdana,Arial,Tahoma;}
+
+.grid-ultraGrid	{border:1px solid #e0e0e0; width:930px; text-align:left;font-size:10px; color:#000000; font-family:Verdana,Arial,Tahoma;}
+
+.grid-header-ultraGrid	{background:url(../images/custImg/pymnt-grid-header-2.jpg) repeat-x; height:25px; color:#000000; font-family:Verdana,Arial,Tahoma; font-size:10px; font-weight:bold;}
+.grid-header-ultraGrid a	{color:#282828;font-size:10px; text-decoration:none; height:25px; font-weight:bold; font-family:Verdana,Arial,Tahoma;}
+
+.grid-altrow-ultraGrid	{background-color:#ffffff; color:#282828; font-size:10px; height:25px; font-family:Verdana,Arial,Tahoma; border:1px solid #e0e0e0;}
+.grid-altrow-ultraGrid a	{color:#282828; font-size:10px; height:15px; font-family:Verdana,Arial,Tahoma;}
+
+.grid-row-ultraGrid		{background-color:#ffffff; color:#282828; font-size:10px; height:25px; font-family:Verdana,Arial,Tahoma; border:1px solid #e0e0e0;}
+.grid-row-ultraGrid a		{color:#282828; text-decoration:underline; font-size:10px; height:25px; font-family:Verdana,Arial,Tahoma;}
+
+.grid-pager-ultraGrid		{background:url(../images/custImg/pymnt-grid-header-2.jpg) repeat-x; width:100%; height:30px; color:#000000; font-family:Verdana,Arial,Tahoma; font-size:10px; text-align:right; padding-right:10px; border:1px solid #e0e0e0;}
+.grid-pager-ultraGrid	a	{color:#000000; text-decoration:underline; font-family:Verdana,Arial,Tahoma; height:30px; font-size:10px; font-family:Verdana,Arial,Tahoma;}
+
+
+
+/* Customer --- Payment details
+-------------------------------------------*/
+#GridCust-PayReceived	 
+{
+	width:533px; height:450px; 
+	border:2px solid #cccccc; 
+	background:url(../images/custImg/paymentetails-bg.jpg) repeat-x;
+	font-family:Verdana, Arial, Tahoma, MS Sans Serif; color:#282828;
+}
+#GridCust-PayReceived .head	{height:28px; padding-top:5px; font-size:10px; font-weight:bold;}
+
+#GridCust-PayDetail	 
+{
+	width:533px; height:450px; 
+	border:2px solid #cccccc; 
+	background:url(../images/custImg/paymentetails-bg.jpg) repeat-x;
+	font-family:Verdana, Arial, Tahoma, MS Sans Serif; color:#282828;
+}
+#GridCust-PayDetail .head	{height:28px; padding-top:5px; font-size:10px; font-weight:bold;}
+
+
+.grid-CstpmtDet	{border:1px solid #e3e3e3; width:507px; text-align:left;font-size:10px; color:#000000;}
+.grid-CstpmtDetTxtfld	{border:1px solid #e3e3e3; width:200px; text-align:left; font-size:10px; color:#282828;}
+
+
+.grid-altrow-CstpmtDet	 {background-color:#f1efef; color:#282828; font-size:10px; height:20px;}
+.grid-altrow-CstpmtDet a {color:#000000; font-size:10px;}
+
+.grid-row-CstpmtDet		{background-color:#f7f7f7; color:#282828; font-size:10px; height:20px;}
+.grid-row-CstpmtDet a	{color:#000000; text-decoration:underline;}
+
+.grid-pager-CstpmtDet	  {background:url(../images/custImg/pymnt-grid-footer.jpg) no-repeat; width:407px; height:22px; color:#000000; font-size:10px; text-align:right; padding-right:10px;}
+.grid-pager-CstpmtDet	a {color:#000000; text-decoration:underline;}
+
+.grid-header-CstpmtDet	  {background:url(../images/custImg/pymnt-grid-header.jpg) repeat-x; height:22px; color:#000000; font-size:10px; font-weight:bold;}
+.grid-header-CstpmtDet a  {color:#c11279;font-size:10px; text-decoration:none;}
+
+
+
+/* Customer --- ClientlistPreferences
+-------------------------------------------*/
+#GridCust-ClientPref	 
+{
+	width:533px; height:400px; 
+	border:2px solid #cccccc; 
+	background:url(../images/custImg/paymentetails-bg.jpg) repeat-x;
+	font-family:Verdana, Arial, Tahoma, MS Sans Serif; color:#282828; font-size:10px;
+}
+.checkboxprfholder
+{
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+	margin-right:20px; 
+	text-align:left;
+	font-size:10px; font-weight:normal; color:#282828;
+}
+.checkboxprf
+{
+	width:11px;
+	height:11px; 
+	float:left;
+	text-align:left;
+	font-size:10px; font-weight:bold; color:#282828;
+}
+
+
+
+
+.gridLink
+{
+text-decoration:none;
+}

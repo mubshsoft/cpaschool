@@ -1,0 +1,51 @@
+-----COLUMN-----
+alter table course add CourseType varchar(100)
+alter table student add ProfileImage varchar(200)
+alter table unit add Mode varchar(100)
+ALter table AssignmentQUES_ANSWERS ADD MarkGivenByFaculty int
+ALter table AssignmentQUES_ANSWERS ADD Feedback varchar(1000)
+ALter table AssignmentSubQUES_ANSWERS ADD Feedback varchar(1000)
+ALTER table ActivateAssignment ADD MarkGivenByFaculty bit
+ALter table AssignmentSubQUES_ANSWERS ADD Feedback varchar(1000)
+ALter table AssignmentSubQUES_ANSWERS ADD MarkGivenByFaculty int
+Alter table ActivateExam Add MarkGivenByFaculty int
+alter table QUES_ANSWERS ADD Feedback varchar(1000)
+alter table QUES_ANSWERS ADD MarkGivenByFaculty int
+
+-----TABLE----
+StudentIDCard
+ExamFinalMarks
+FacultyActiveExam
+FacultyActiveAssignment
+AssignmentFinalMarks
+AssignmentManualFinalMarks
+
+-----PROCEDURE----
+SP_ProgressReports
+SP_GetListOfExamandAssignmentToFaculty
+SP_AddExamToFaculty
+SP_GetUserListSubmittedExam
+SP_GetSubmitedExamByUserId
+SP_AddUpdateExamFinalMarks
+SP_GetListOfExamToFaculty
+SP_GetAssignedExamtoFaculty
+sp_GetExamDetails
+SP_AddUpdateManualAssignmentFinalMarks
+SP_GetUserListSubmittedAssignment
+SP_AddUpdateAssignmentFinalMarks
+SP_GetSubmitedCaseStudyAssigmentByUserId_new
+SP_GetSubmitedAssignmentByUserId
+SP_GetSubmittedAssignmentList
+SP_GetListOfAssignmentToFaculty
+SP_GetAssignmentAnswerOfflineandManual
+SP_AddAssignmentToFaculty
+SP_GetAssignedAssignmenttoFaculty
+sp_GetAssignmentDetails
+SP_AddAssignmentActivate
+SP_GetStudentByBatch
+SP_StudentIdCard
+SP_GetActiveStudentforExam
+SP_GetExamListByBatch
+SP_GetPaperFileBySemid
+SP_GetPaperFileBySemid_old
+SP_UpdateStudentProfileAdmin

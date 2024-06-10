@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>71</CategoryId>
+        <Questionid>717</Questionid>
+        <QuestionText>who is the faculty for ppaer-01?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>71</CategoryId>
+        <Questionid>718</Questionid>
+        <QuestionText>what is paper 2</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>71</CategoryId>
+        <Questionid>719</Questionid>
+        <QuestionText>Sanjay Patra is teh faculty for paper______________</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Fill Blank</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>72</CategoryId>
+        <Questionid>729</Questionid>
+        <QuestionText>Image Question</QuestionText>
+        <UploadQuestionImagePath>Examid_32back_4.jpg</UploadQuestionImagePath>
+        <MaxQueMarks>2</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Image Question</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>72</CategoryId>
+        <Questionid>721</Questionid>
+        <QuestionText>What is the current legal framework for NGOs in India?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>72</CategoryId>
+        <Questionid>720</Questionid>
+        <QuestionText>What is NGO Accountability?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>72</CategoryId>
+        <Questionid>722</Questionid>
+        <QuestionText>Create a balance sheet for an NGO</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Descriptive</QUESTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>72</CategoryId>
+        <Questionid>724</Questionid>
+        <QuestionText>&lt;div style="text-align: justify; text-indent: 0.5in"&gt;The chief functionary of an NGO &amp;ldquo;Development for All&amp;rdquo; (DFA) convened an emergency board meeting. She explained to the members that there has been a serious financial mismanagement which she needs to share with the board members.&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; In the meeting, she shared that in a project area in the state of Chattisgarh there are 2 projects running i.e. &amp;ldquo;Integrated Rural Development Project&amp;rdquo; (IRDP) and &amp;ldquo;HIV- AIDS awareness program&amp;rdquo;. There was a delay in receipt of funds from the donor of HIV- AIDS awareness program. Therefore, the team leader of the program Mr. Suresh requested the team leader of IRDP Mr. Anil to give him an advance of Rs.1, 00,000/- which would be returned after the grant is made available. HIV-AIDS awareness program being a new project did not have any bank account. So Anil, who was one of the signatories of IRDP project bank account along with Mr. Shastri, a board member withdrew Rs. 1,00,000/- from the bank in cash and handed over the amount.&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;
+&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; After 3 months during field visit, Ms Sapna, the Finance Manager of DFA in Head office, visited the site for inspection. She noticed that in IRDP project&amp;rsquo;s account books, Rs. 1, 00,000/- has been shown as an advance to HIV-AIDS awareness program. However, in HIV-AIDS project&amp;rsquo;s books of account, the amount has not been shown as received. Upon further inquiry with Suresh, he flatly refused that he has ever accepted Rs. 1, 00,000/- from Anil, whereas Anil claimed strongly that he had handed over the amount to Suresh personally. Some of the team members of IRDP project also endorsed that Anil has indeed given money to Suresh and Anil was a very honest and dependable person. After a lot of discussions since no conclusion could be reached, Anil being a nice person agreed to show the amount of Rs. 1,00,000/- on his name as an advance by signing an advance voucher and has requested the management to deduct the amount from his salary at Rs. 5000 per month till the amount is cleared.&lt;/div&gt;</QuestionText>
+        <MaxQueMarks>15</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Case Study</QUESTYPE>
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

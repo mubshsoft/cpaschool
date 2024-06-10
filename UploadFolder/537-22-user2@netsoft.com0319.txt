@@ -1,0 +1,32 @@
+
+
+create PROC [dbo].[SP_AddStudentExamActivate] 
+	
+  @examid int,
+@batchid int,
+@userid varchar(400)
+
+   
+AS
+BEGIN
+	IF(not EXISTS(SELECT TOP 1 1 FROM StudentActiveExam WHERE userid=@userid and examid=@examid and bid=@batchid))
+	BEGIN
+
+INSERT INTO StudentActiveExam(examid,userid,bid)
+values(@examid,@userid,@batchid)
+      	IF @@ERROR <> 0    
+		  BEGIN    
+				
+	         RETURN -1
+
+		  END
+else
+  bEGIN    
+				
+	         RETURN 0
+
+		  END
+		
+	END
+	
+end

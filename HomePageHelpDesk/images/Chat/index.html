@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Video Chat</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    
+    <link rel="stylesheet" href="css/main.css"/>
+    <style>
+    .box
+    {
+            background: #fff;
+            width: 288px;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 20px;
+    }
+    @media (max-width: 979px){
+        .title .container {
+            margin-top: 0px;
+            padding: 10px 10px;
+        }
+        
+    }
+    </style>
+</head>
+<body style="background:#b7b6b6">
+   <section class="title" style="background:#504f4f">
+        <div class="container" style="margin-top:0px; margin-bottom:0px">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="color:#fff; text-align:center">Getting ready for video conferencing</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alumni-speak" class="container main">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="box">
+                    <form name="VCForm" action="StartChat.html" method="get">
+                        <input type="text" class="input-block-level" id="u" name="u" required placeholder="Your name to display while conferencing"/>
+                        <div class="span12 text-center"><h5>You are a</h5></div>
+                        <div class="span12" style="margin:0px">
+                            <div class="pull-left">
+                                <input type="radio" name="utype" class="radio" value="Member" id="r2"  style="margin:0" required/> <label for="r2"  style="display:inline">Member</label>
+                            </div>
+                            <div class="pull-right">
+                                <input type="radio" class="radio" id="r1" value="Organiser" name="utype" style="margin:0" required /> <label for="r1" style="display:inline">Organiser</label>
+                            </div>
+                        </div>
+                        <input type="submit" value="I am Ready" class="btn btn-block btn-success" style="padding:10px; margin-left:0px"/>
+                        <hr />
+                        <small style="line-height: 14px;"><b>Note: </b>In a room only 1 organiser should be there, so if you are not organiser then never select the option</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

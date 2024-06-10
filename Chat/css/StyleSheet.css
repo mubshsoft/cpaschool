@@ -1,0 +1,79 @@
+﻿.panel-primary{
+    box-shadow: 0 4px 20px rgb(74, 74, 74);
+}
+.panel-primary .panel-heading
+{
+    color: #fff;
+    background-color: #222d32;
+    border-color: #080b0c;
+    font-size:16px;
+}
+.messanger .messages .message .info
+{
+	padding: 0px;
+    font-size:10px;
+	color:#0c96e8;
+}
+.messanger .messages .message
+{
+    font-size: 12px;
+    border-radius: 4px;
+	padding: 0px 5px;
+	margin:0 6px;
+}
+.you{
+	background:#ffffff;
+	text-align: left;
+}
+.me{
+	background:#e1f6fd;
+	text-align: right;
+}
+
+.messanger .messages .message img
+{
+    margin-right: 6px;
+    width:40px;
+    height:40px;
+}
+.messanger .messages .message.me img
+{
+    margin-right:0px;
+    margin-left:6px;
+    width:40px;
+    height:40px;
+}
+.media-box
+{
+    background: black;
+    border: 2px solid rgb(8, 0, 0);
+    margin: 0px;
+    padding: 2px;
+}
+.list-group-item
+{
+    border: 1px solid #f5f5f5;
+}
+.card
+{
+    margin-bottom: 20px;
+}
+.userspan
+{
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+    padding: 3px 5px 3px 6px;
+    margin: 0 4px 0 0;
+    background: #eeeeee;
+    color: #ffffff;
+}
+.videoCaption
+{
+    background: #f7f7f7;
+    text-align: center;
+    color: #222d32;
+    font-size: 12px;
+}
+.play-recorded{
+    color: #d81b1b;
+}

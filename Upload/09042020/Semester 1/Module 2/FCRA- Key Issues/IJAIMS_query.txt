@@ -1,0 +1,26 @@
+Dear Sir,
+
+ 
+
+I have done testing of IJAIMS website and some pages links is not working.
+
+ 
+
+Note : Not working link list :
+
+ 
+
+*1. Track Your Manuscript : Link is not working at home page. - Wahid
+****3. Submit Expanded Scientific Abstract : Link is not working at home page. - Wahid
+4. Generate Online Invoice : Link is not working at home page. - Wahid
+*5. Order Hard Copy : Link is not working at home page. - Wahid
+*6. Ahead of Print : Server Error in '/' Application.-Wahid
+*7. Current Issue : Link is not working at home page.-Wahid
+*12. Head of print : tab button is not working. - Wahid
+
+
+2. Indexing Information : Link is not working at home page. Preeti
+8. About the journal+Policies : indexing & Abstracting page data is not showing - Preeti.
+9. About the journal+Policies+Submission : Copyright notice link is not working. - Preeti
+10. About the journal+Policies+Submission : Privacy statement link is not working. - Preeti
+11. About the journal+Others : In others all page link is not working. - Preeti

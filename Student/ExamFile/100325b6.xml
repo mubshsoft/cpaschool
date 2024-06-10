@@ -1,0 +1,553 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="CategoryId" type="xs:int" minOccurs="0" />
+                <xs:element name="Questionid" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="UploadQuestionImagePath" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="ExamId" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7286</Questionid>
+        <QuestionText>Which of the following is NOT a primary book of account?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7288</Questionid>
+        <QuestionText>Which of the following is true, about the difference between book-Keeping and accounting?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table3" msdata:rowOrder="2">
+        <ROWID>3</ROWID>
+        <QuesNo>3</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7292</Questionid>
+        <QuestionText>RR ltd. has incurred Rs. 50,000 for initial advertisement, the benefit of which is expected to last for 5 years. How would this be treated in the accounts?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table4" msdata:rowOrder="3">
+        <ROWID>4</ROWID>
+        <QuesNo>4</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7289</Questionid>
+        <QuestionText>Which of the following describes the difference between single-entry system and double entry system?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table5" msdata:rowOrder="4">
+        <ROWID>5</ROWID>
+        <QuesNo>5</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7296</Questionid>
+        <QuestionText>Which of the following is NOT an example of ‘Programmatic Supporting’ for vouchers?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table6" msdata:rowOrder="5">
+        <ROWID>6</ROWID>
+        <QuesNo>6</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7302</Questionid>
+        <QuestionText>Debiting an asset account will result in which of the following?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table7" msdata:rowOrder="6">
+        <ROWID>7</ROWID>
+        <QuesNo>7</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7283</Questionid>
+        <QuestionText>In QPL ltd., maintenance expense for their machinery for January 2015 was wrongly capitalized. This is an example of which type of error?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table8" msdata:rowOrder="7">
+        <ROWID>8</ROWID>
+        <QuesNo>8</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7284</Questionid>
+        <QuestionText>Which of the following errors will affect/ will be shown in the trial balance?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table9" msdata:rowOrder="8">
+        <ROWID>9</ROWID>
+        <QuesNo>9</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7301</Questionid>
+        <QuestionText>In single entry system, usually, which accounts are maintained?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table10" msdata:rowOrder="9">
+        <ROWID>10</ROWID>
+        <QuesNo>10</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7295</Questionid>
+        <QuestionText>QP ltd. follows Cash Basis of accounting. Which of the following will not appear in their books of account? </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table11" msdata:rowOrder="10">
+        <ROWID>11</ROWID>
+        <QuesNo>11</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7300</Questionid>
+        <QuestionText>Depreciation is usually not provided for, in _______ basis of accounting.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>2</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table12" msdata:rowOrder="11">
+        <ROWID>12</ROWID>
+        <QuesNo>12</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7281</Questionid>
+        <QuestionText>‘Research and Development’ Expenditure can be classified as which type of expenditure?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table13" msdata:rowOrder="12">
+        <ROWID>13</ROWID>
+        <QuesNo>13</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7299</Questionid>
+        <QuestionText>Vouchers need to be prepared for?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table14" msdata:rowOrder="13">
+        <ROWID>14</ROWID>
+        <QuesNo>14</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7293</Questionid>
+        <QuestionText>Depreciation entries should be passed through:</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table15" msdata:rowOrder="14">
+        <ROWID>15</ROWID>
+        <QuesNo>15</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7285</Questionid>
+        <QuestionText>Which of the following is NOT one of the four major streams of accounting?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table16" msdata:rowOrder="15">
+        <ROWID>16</ROWID>
+        <QuesNo>16</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7298</Questionid>
+        <QuestionText>Salary due for the month of January 2015 is Rs. 2,50,000. Out of this amount, Only Rs. 2,00,000 could be paid. The rest remains outstanding. Which amount will be reflected in the Income and Expenditure Account?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table17" msdata:rowOrder="16">
+        <ROWID>17</ROWID>
+        <QuesNo>17</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7291</Questionid>
+        <QuestionText>QR. Limited bought material from ‘Sun &amp; Co’ on credit. The accountant passed the following entry-     Material A/C……………………….Dr      XXXX	To Bank Account                              XXXXHow would you rectify this entry?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table18" msdata:rowOrder="17">
+        <ROWID>18</ROWID>
+        <QuesNo>18</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7287</Questionid>
+        <QuestionText>Which of the following acts recommends the use of Accrual basis of accounting?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table19" msdata:rowOrder="18">
+        <ROWID>19</ROWID>
+        <QuesNo>19</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7282</Questionid>
+        <QuestionText>What is the treatment of ‘Deferred Revenue Expenditure’ for the purpose of accounting?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table20" msdata:rowOrder="19">
+        <ROWID>20</ROWID>
+        <QuesNo>20</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7278</Questionid>
+        <QuestionText>ABC ltd. changes its depreciation policy [method of calculating depreciation] every year. This practice is in contravention of which accounting convention?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table21" msdata:rowOrder="20">
+        <ROWID>21</ROWID>
+        <QuesNo>21</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7280</Questionid>
+        <QuestionText>Which of the following is NOT true?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table22" msdata:rowOrder="21">
+        <ROWID>22</ROWID>
+        <QuesNo>22</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7279</Questionid>
+        <QuestionText>In the Books of Account, ‘Bank’ account could be classified as –</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table23" msdata:rowOrder="22">
+        <ROWID>23</ROWID>
+        <QuesNo>23</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7290</Questionid>
+        <QuestionText>ABC ltd. procured new machinery. Initial installation expenses were incurred in order to bring the machinery to working condition.  Which account would you DEBIT for this?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table24" msdata:rowOrder="23">
+        <ROWID>24</ROWID>
+        <QuesNo>24</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7297</Questionid>
+        <QuestionText>Rent due for the month of January 2015 is Rs. 15,000. Out of this amount, Only Rs. 10,000 could be paid, and the rest remains outstanding. Which amount will be reflected in the Receipt and Payment Account?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table25" msdata:rowOrder="24">
+        <ROWID>25</ROWID>
+        <QuesNo>25</QuesNo>
+        <CategoryId>584</CategoryId>
+        <Questionid>7294</Questionid>
+        <QuestionText>Mr. A was the proprietor of ABC associates. The accountant included both personal account (of Mr.A) and business’(ABC associates) income and expenditure in the accounts of ABC associates.  This is against which concept?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>1</MaxQueMarks>
+        <CategoryName>Section1</CategoryName>
+        <QUESTYPE>Objective</QUESTYPE>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table26" msdata:rowOrder="25">
+        <ROWID>26</ROWID>
+        <QuesNo>26</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7309</Questionid>
+        <QuestionText>What are the benefits of preparing Vouchers? List the various types of vouchers prepared by an NGO? Explain the essential components of a Voucher.</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table27" msdata:rowOrder="26">
+        <ROWID>27</ROWID>
+        <QuesNo>27</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7303</Questionid>
+        <QuestionText>Pass Journal Entries for the following transactions:
+•	Rs. 5,000 paid to staff as travel advance
+•	Stationery worth Rs. 2,000 bought on credit from Moon Light Ltd.
+•	Salary for the month of January 2015, amounting to Rs. 30,000 paid through Bank.
+•	Interest of Rs. 40,000 earned 
+•	Furniture worth Rs. 45,000 bought, and paid through bank. 
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table28" msdata:rowOrder="27">
+        <ROWID>28</ROWID>
+        <QuesNo>28</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7310</Questionid>
+        <QuestionText>The financial year followed by an organization is April-March. However, for a particular donor, the reporting period is January-December. How would you deal with this scenario?</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table29" msdata:rowOrder="28">
+        <ROWID>29</ROWID>
+        <QuesNo>29</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7308</Questionid>
+        <QuestionText> What is the difference between Restricted and Unrestricted funds? Give examples of restricted and unrestricted funds. How should restricted and unrestricted funds be disclosed in the audited financial statements? </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table30" msdata:rowOrder="29">
+        <ROWID>30</ROWID>
+        <QuesNo>30</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7306</Questionid>
+        <QuestionText> ‘Sunshine’ Is an NGO which works towards rain water harvesting. They are planning to conduct a training which approximately 50 people would attend. You are required to advise them on:
+•	the type of expenses that would need to be incurred
+•	 Financial and programmatic supporting that they would be required, to be able to charge these expenses to the relevant project. 
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table31" msdata:rowOrder="30">
+        <ROWID>31</ROWID>
+        <QuesNo>31</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7305</Questionid>
+        <QuestionText>Classify/ identify the following accounts as Real, Nominal or Personal accounts:
+a.	Bank Account
+b.	Creditors account
+c.	Prepaid Insurance account
+d.	Salary Account
+e.	Staff-Advance Account
+f.	Rent Account
+g.	Rent deposit account
+h.	Grant Balance Account
+i.	Furniture Account
+j.	Maintenance expense account
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table32" msdata:rowOrder="31">
+        <ROWID>32</ROWID>
+        <QuesNo>32</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7307</Questionid>
+        <QuestionText> ‘Raindrops’ is a newly established NGO which works towards urban sanitation in four major cities. They would be dealing with small grants in the first few years. However, they aim to expand rapidly in the future. 
+Should Raindrops follow centralized or decentralized accounting? Which subsidiary records should they maintain, and where should they be maintained? [Field/head office].  Justify your choices.  
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table33" msdata:rowOrder="32">
+        <ROWID>33</ROWID>
+        <QuesNo>33</QuesNo>
+        <CategoryId>585</CategoryId>
+        <Questionid>7304</Questionid>
+        <QuestionText>Pass rectification entries for the following:
+•	Rs. 2,000 paid to Mr. Ram was wrongly debited to Mr. Sam
+•	 Rent paid of Rs.15,000 was wrongly entered as 1,500
+•	Regular maintenance cost of Rs. 25,000 was wrongly capitalized [wrongly debited to Computer A/C]
+•	Stationery bought, worth Rs. 1,500 was wrongly entered as 1050
+•	Rent deposit paid of Rs. 50,000 was wrongly debited to Rent account. [expense account]
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>5</MaxQueMarks>
+        <CategoryName>Section2</CategoryName>
+        <QUESTYPE>Subjective</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table34" msdata:rowOrder="33">
+        <ROWID>34</ROWID>
+        <QuesNo>34</QuesNo>
+        <CategoryId>586</CategoryId>
+        <Questionid>7316</Questionid>
+        <QuestionText>Goodwill Foundation has been sanctioned a grant of Rs. 200 lakhs by Helping Hand Foundation, a donor agency based in the United Kingdoms. Thus this grant is foreign contribution and is regulated by the FCRA 2010 and FCRR 2011. You are required to make a plan for the following aspects:
+•	The books of account to be maintained for the grant (at head office and field office levels), including structuring of the books and ledgers  
+•	Other subsidiary records (such as fixed asset, stock registers etc) to be maintained at head office and field office levels
+•	Banking aspects and payment procedures for the project at the head office and field office levels, keeping in mind that this is a foreign contribution grant.
+•	Other Internal Control systems (cash, bank, asset management, vouching processes etc) would you put in place for financial management of the grant?
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table35" msdata:rowOrder="34">
+        <ROWID>35</ROWID>
+        <QuesNo>35</QuesNo>
+        <CategoryId>586</CategoryId>
+        <Questionid>7315</Questionid>
+        <QuestionText>In your own words talk about atleast 5 problems / issues in accounting that are encountered by NPOs in the present scenario. Also offer your own solutions for each problem / issue highlighted by you. </QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table36" msdata:rowOrder="35">
+        <ROWID>36</ROWID>
+        <QuesNo>36</QuesNo>
+        <CategoryId>586</CategoryId>
+        <Questionid>7313</Questionid>
+        <QuestionText>Prepare a Balance Sheet as at 31st March 2014, in the prescribed format, based on the data given below (of the closing balances of accounts as on that date):
+•	Cash In hand – Rs. 33,000
+•	Prepaid insurance – Rs. 12,000
+•	Outstanding salaries – Rs. 1,40,000
+•	Cash at Bank – Rs. 2,50,000
+•	Furniture – Rs. 2,30,000
+•	Sundry Creditors – 1,20,000
+•	Outstanding rent – 39,000
+•	Loan taken from Bank – 1,00,000
+•	Computers – Rs. 56,000
+•	Staff Advance – 30,000
+•	Grant received in advance – 2,12,000
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table37" msdata:rowOrder="36">
+        <ROWID>37</ROWID>
+        <QuesNo>37</QuesNo>
+        <CategoryId>586</CategoryId>
+        <Questionid>7312</Questionid>
+        <QuestionText>Prepare a Receipt and Payment account for the year ending 31st March 2014, based on the data given below, and arrive at the closing ‘cash &amp; bank’ balance as at 31st March 2014. [combined closing balance of cash + bank]
+•	Opening balances[1st April 2013] : Cash – Rs. 20,000, Bank – Rs. 2,50,000
+•	Received grant of Rs. 5,00,000 on 15th May 2013.
+•	Rent deposit of Rs. 75,000 given to landlord on 22nd June 2013.
+•	Staff advance of Rs. 18,000 given on 1st July 2013.
+•	Programmatic Expense of Rs. 2,25,000 incurred in the month of July 2013. 
+•	Grant of Rs. 3,00,000 received on 3rd August 2013.
+•	Salary to be paid for the financial year 2013-14 amounts to Rs. 2,40,000. However, only Rs. 2,00,000 was paid till 31st March 2014. The balance remains outstanding.
+•	Interest of Rs. 50,000 was earned (and credited by bank) in the financial year 2013-14
+•	Rent for the year 2013-14 amounted to Rs. 1,80,000. This was fully paid, and Rs. 20,000 was prepaid rent for the next year. [Total of 2,00,000 was paid, excluding the deposit amount]
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+      <Table diffgr:id="Table38" msdata:rowOrder="37">
+        <ROWID>38</ROWID>
+        <QuesNo>38</QuesNo>
+        <CategoryId>586</CategoryId>
+        <Questionid>7311</Questionid>
+        <QuestionText>Prepare a Bank Reconciliation Statement, in the prescribed format, based on the following data:
+•	Balance as per the bank book as at 31st December 2014 is – Rs. 2,50,000
+•	Cheque worth Rs. 20,000 has been deposited in bank, which is pending clearance/credit in the bank account.
+•	Cheque worth Rs. 15,000 has been issued to creditor, but has not been presented to the bank for payment.
+•	A cheque received of Rs. 45,000, was taken as Rs. 54,000 in the bank book. 
+•	Bank Collected Investment-Interest amount of Rs. 2,500 directly, upon order. This wasn’t recorded in the bank book.
+•	Interest on Bank Balance of Rs. 5,000 was credited to bank account, by bank. This has not been recorded in the bank book.
+•	 A cheque issued of Rs. 75,000 was entered as 7,500 in the bank book.
+
+Taking the balance as per the bank book as base, show the bank reconciliation, and arrive at the balance as per the pass book.
+</QuestionText>
+        <UploadQuestionImagePath />
+        <MaxQueMarks>10</MaxQueMarks>
+        <CategoryName>Section3</CategoryName>
+        <QUESTYPE>Descriptive2</QUESTYPE>
+        <OPTIONTYPE />
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

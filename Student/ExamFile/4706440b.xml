@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<DataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ROWID" type="xs:long" minOccurs="0" />
+                <xs:element name="QuesNo" type="xs:long" minOccurs="0" />
+                <xs:element name="QuestionId" type="xs:int" minOccurs="0" />
+                <xs:element name="UnitId" type="xs:int" minOccurs="0" />
+                <xs:element name="ChapterId" type="xs:int" minOccurs="0" />
+                <xs:element name="QuestionText" type="xs:string" minOccurs="0" />
+                <xs:element name="QUESTYPE" type="xs:string" minOccurs="0" />
+                <xs:element name="Answer" type="xs:string" minOccurs="0" />
+                <xs:element name="Descriptive" type="xs:boolean" minOccurs="0" />
+                <xs:element name="MaxQueMarks" type="xs:int" minOccurs="0" />
+                <xs:element name="OPTIONTYPE" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+    <NewDataSet>
+      <Table diffgr:id="Table1" msdata:rowOrder="0">
+        <ROWID>1</ROWID>
+        <QuesNo>1</QuesNo>
+        <QuestionId>4</QuestionId>
+        <UnitId>2215</UnitId>
+        <ChapterId>1</ChapterId>
+        <QuestionText>Stakeholders of an NGO includes </QuestionText>
+        <QUESTYPE>Objective</QUESTYPE>
+        <Answer>All of the above</Answer>
+        <Descriptive>false</Descriptive>
+        <MaxQueMarks>1</MaxQueMarks>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+      <Table diffgr:id="Table2" msdata:rowOrder="1">
+        <ROWID>2</ROWID>
+        <QuesNo>2</QuesNo>
+        <QuestionId>5</QuestionId>
+        <UnitId>2215</UnitId>
+        <ChapterId>1</ChapterId>
+        <QuestionText>The overall framework of an effective financial system includes</QuestionText>
+        <QUESTYPE>Objective</QUESTYPE>
+        <Answer>Setting up of policies, Budgeting, Internal Control, Accounting Systems, Legal Compliances, Reporting &amp; Audit</Answer>
+        <Descriptive>false</Descriptive>
+        <MaxQueMarks>1</MaxQueMarks>
+        <OPTIONTYPE>Radio Button</OPTIONTYPE>
+      </Table>
+    </NewDataSet>
+  </diffgr:diffgram>
+</DataSet>

@@ -1,0 +1,333 @@
+Step 1: Create a table called Stores as follows (Execute the create table statement)
+
+CREATE TABLE Stores(ItemIndex int,ItemName varchar(10),Price decimal)
+
+Step 2: Create stored procedure sp_test_xml (execute following stored procedure)
+
+Create proc sp_test_xml
+(
+@flag int = null,
+@XMLInput text = null
+)
+as
+begin
+
+    if(@flag = 1)                            --Flag
+    begin
+        declare @idoc int
+
+        exec sp_xml_preparedocument @idoc output,@XMLInput
+
+        --#te is temp table used to store the xml data.
+        ----below statement for inserting xml data in temp table.
+
+        select ItemName,Price into #te from openxml(@idoc,'Root/Items',1) 
+        with                                
+        (
+            ItemName varchar(10),
+            Price decimal
+        )
+        --cursor to read data from temp table
+        declare cu_xml cursor for select ItemName,Price from #te    
+        declare @ItemName varchar(10),@Price decimal,@ItemIndex int    
+
+        --Open cursor
+        open cu_xml
+
+        --fetch the temp table data row by row
+
+        fetch cu_xml into @ItemName,@Price                 
+
+            --while loop is used to check the end of cursor is reached or not
+            while (@@fetch_status = 0)
+            begin
+                --increment row index by one
+                select @ItemIndex = isnull(max(ItemIndex),0)+1 from Stores    
+                --insert the values into Stores table.
+                insert into Stores values(@ItemIndex,@ItemName,@Price)        
+                fetch cu_xml into @ItemName,@Price
+            end
+        --close the cursor and deallocate.
+        Close cu_xml
+        deallocate cu_xml
+    end
+End
+
+Step 3: Below procedure shows how data is sent to SQL Server in XML format.
+
+Execute below query.
+
+exec sp_test_xml @flag = 1,@XMLInput = '<Root>
+<Items ItemName = "Rice" Price = "3.0"></Items>
+<Items ItemName = "Rava" Price = "3.0"></Items>
+</Root>'
+
+Step 4: 
+
+SELECT * FROM Stores
+
+while working with database usually asked question is how to send multiple rows of table data to SQL and how to insert it to a database. 
+
+Best way to this problem is to use of XML to send multiple rows of table data and insert it.In the  Above procedure @XMLInput is the variable used to assign XML data.
+
+Cursor is used to insert data row by row and the table column "ItemIndex" valued is incremented by one for every New row insertion to the table.
+
+
+
+
+
+
+
+
+
+
+
+
+Many times we come across a situation in which we want to execute a method in parent control on the basis of the event raised by a child control.
+
+Most common scenario which I encountered is, when we are having a child control which is having a clear button. On the click of this clear button of Child Control, we need to clear all the controls on parent control as well.
+
+Please follow the beneath written steps to understand the code.
+
+Create a child control and name it: ChildControl.ascx
+
+In the HTML part of this control, place a textbox and a button control.
+
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ChildControl.ascx.cs" Inherits="ChildControl" %>
+<b>Child Control:</b><asp:TextBox ID="ChildTextBox1" runat="server"></asp:TextBox>
+<br /><br />
+<asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Raise Event" />
+<br />
+
+Open its Code File: ChildControl.ascx.cs and place the following code in it.
+
+public partial class ChildControl : System.Web.UI.UserControl
+{
+   public delegate void ClearDelegate();
+   public event ClearDelegate ClearExecuted;
+   protected virtual void OnClearControl()
+   {
+       if (this.ClearExecuted != null)
+       {
+           this.ClearExecuted();
+       }
+   }
+   protected void Page_Load(object sender, EventArgs e)
+   {
+   }
+   protected void Button1_Click(object sender, EventArgs e)
+   {
+       ChildTextBox1.Text = String.Empty;
+       this.OnClearControl();
+   }
+}
+
+Step by step explanation to the above code: 
+
+Create a delegate "ClearDelegate" which has no parameters and also has return type void. 
+Create a new Event with the above delegate . 
+Create a OnClearControl method which will be used to raise the event. 
+On Button click, we will empty the textbox control available on the child Control and also call OnClearControl method to raise the event in parent control.
+This completes our child control.
+
+Now create a new webpage to consume the above created child control and lets say name it as Default.aspx
+
+In the HTML part of this page, place a textbox and a child control created above. Code on Default.aspx will look like this:
+
+<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Register src="ChildControl.ascx" temp_src="ChildControl.ascx" tagname="ChildControl" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <b>Parent Control: </b> <asp:TextBox ID="ParentTextBox1" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <uc1:ChildControl ID="ChildControl1" runat="server" />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
+
+Code part: Default.aspx.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;  
+
+public partial class _Default : System.Web.UI.Page 
+
+{ 
+
+    protected void Page_Load(object sender, EventArgs e) 
+
+    { 
+
+        ChildControl1.ClearExecuted += new ChildControl.ClearDelegate(ChildControl1_ClearExecuted); 
+
+    } 
+
+  
+
+    void ChildControl1_ClearExecuted() 
+
+    { 
+
+        ParentTextBox1.Text = string.Empty; 
+
+    } 
+
+}
+
+Step by step explanation: 
+
+On page load, subscribe a child control's ClearExecuted event and provide it the method of parent form to be executed.   
+Create a method with same signature as of delegate on the child control.   
+Clear the value in text property of the textbox on parent control.  
+In the above way we were able to call a method on the parent control from the child control.
+
+Enjoy Programming. 
+
+
+
+
+
+
+
+Many times we come across a situation in which we want to execute a method in parent control on the basis of the event raised by a child control.
+
+Most common scenario which I encountered is, when we are having a child control which is having a clear button. On the click of this clear button of Child Control, we need to clear all the controls on parent control as well.
+
+Please follow the beneath written steps to understand the code.
+
+Create a child control and name it: ChildControl.ascx
+
+In the HTML part of this control, place a textbox and a button control.
+
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ChildControl.ascx.cs" Inherits="ChildControl" %>
+<b>Child Control:</b><asp:TextBox ID="ChildTextBox1" runat="server"></asp:TextBox>
+<br /><br />
+<asp:Button ID="Button1" runat="server" onclick="Button1_Click" Text="Raise Event" />
+<br />
+
+Open its Code File: ChildControl.ascx.cs and place the following code in it.
+
+public partial class ChildControl : System.Web.UI.UserControl
+{
+   public delegate void ClearDelegate();
+   public event ClearDelegate ClearExecuted;
+   protected virtual void OnClearControl()
+   {
+       if (this.ClearExecuted != null)
+       {
+           this.ClearExecuted();
+       }
+   }
+   protected void Page_Load(object sender, EventArgs e)
+   {
+   }
+   protected void Button1_Click(object sender, EventArgs e)
+   {
+       ChildTextBox1.Text = String.Empty;
+       this.OnClearControl();
+   }
+}
+
+Step by step explanation to the above code: 
+
+Create a delegate "ClearDelegate" which has no parameters and also has return type void. 
+Create a new Event with the above delegate . 
+Create a OnClearControl method which will be used to raise the event. 
+On Button click, we will empty the textbox control available on the child Control and also call OnClearControl method to raise the event in parent control.
+This completes our child control.
+
+Now create a new webpage to consume the above created child control and lets say name it as Default.aspx
+
+In the HTML part of this page, place a textbox and a child control created above. Code on Default.aspx will look like this:
+
+<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Register src="ChildControl.ascx" temp_src="ChildControl.ascx" tagname="ChildControl" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <b>Parent Control: </b> <asp:TextBox ID="ParentTextBox1" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <uc1:ChildControl ID="ChildControl1" runat="server" />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
+
+Code part: Default.aspx.cs
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;  
+
+public partial class _Default : System.Web.UI.Page 
+
+{ 
+
+    protected void Page_Load(object sender, EventArgs e) 
+
+    { 
+
+        ChildControl1.ClearExecuted += new ChildControl.ClearDelegate(ChildControl1_ClearExecuted); 
+
+    } 
+
+  
+
+    void ChildControl1_ClearExecuted() 
+
+    { 
+
+        ParentTextBox1.Text = string.Empty; 
+
+    } 
+
+}
+
+Step by step explanation: 
+
+On page load, subscribe a child control's ClearExecuted event and provide it the method of parent form to be executed.   
+Create a method with same signature as of delegate on the child control.   
+Clear the value in text property of the textbox on parent control.  
+In the above way we were able to call a method on the parent control from the child control.
+
+Enjoy Programming. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

